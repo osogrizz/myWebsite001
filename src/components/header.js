@@ -84,12 +84,17 @@ const LogoContainer = styled.div`
   min-width: 120px;
   text-decoration: none;
   padding-left: 0;
+  transition: all .1s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   img {
-    transition: all .8s;
+    transition: all .1s;
   }
   img:hover {
-    transform: scale(.9) rotate(-5deg);
+    transform: rotate(-15deg);
   }
 
   @media (max-width: 1565px) {
@@ -104,9 +109,6 @@ const LogoContainer = styled.div`
 `;
 
 const NavContainer = styled.div`
-  // z-index: 3;
-  // max-width: 50vw;
-  // margin: 0;
   ul {
     display: flex;
     justify-content: space-evenly;

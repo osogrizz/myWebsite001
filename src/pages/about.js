@@ -16,8 +16,6 @@ const Container = styled.div`
   max-width: 960px;
   min-height: 90vh;
   text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: #fff;
   p {
     font-size: 1.8rem;
@@ -55,6 +53,23 @@ const Container = styled.div`
 const Wrapper = styled.div`
   background: #323944;
   width: 100%;
+  color: #424242;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+`
+
+const FooterStyles = styled.footer`
+  margin: 0 auto;
+  max-width: 950px;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 100;
+  }
 `
 
 const About = ({ data }) => (
@@ -76,6 +91,18 @@ const About = ({ data }) => (
           <Link to="/contact/"> Or, let's get started now.</Link>
         </p>
       </Container>
+      <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
+          <hr /> 
+          </div>
+      <FooterStyles>
+          <div>
+          Copyright © {new Date().getFullYear()},  CompanyName - All Rights Reserved
+          </div>
+
+          <div style={{ textAlign: 'right', }}>
+          <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
+          </div>
+      </FooterStyles>
     </Layout>
   </Wrapper> 
 )

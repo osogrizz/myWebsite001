@@ -5,12 +5,17 @@ import styled from 'styled-components';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const Wrapper = styled.div`
+  background: #323944;
+  width: 100%;
+  color: #4d4d4d;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+`
 
 const Container = styled.div`
   position: relative;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   margin: 0 auto;
   padding: 0px 1.0875rem 1.45rem;
   margin-top: 1.45rem;
@@ -46,9 +51,19 @@ const Container = styled.div`
     }
   }
 `
-const Wrapper = styled.div`
-  background: #323944;
-  width: 100%;
+
+const FooterStyles = styled.footer`
+margin: 0 auto;
+max-width: 950px;
+font-size: 16px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 100;
+}
 `
 
 const IndexPage = ({ data }) => (
@@ -60,6 +75,18 @@ const IndexPage = ({ data }) => (
         <h2>Websites, Blogs, E-Commerce</h2>
         <p>Custom sites for what you need.</p>
       </Container>
+      <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
+          <hr /> 
+          </div>
+      <FooterStyles>
+          <div>
+          Copyright © {new Date().getFullYear()},  CompanyName - All Rights Reserved
+          </div>
+
+          <div style={{ textAlign: 'right', }}>
+          <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
+          </div>
+      </FooterStyles>
     </Layout>
   </Wrapper>
 );

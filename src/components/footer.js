@@ -87,7 +87,8 @@ const Footer = () => (
       paddingTop: '120px',
       minHeight: '390px',
       color: '#6a6a6a',
-      backgroundColor: 'rgba(20, 20, 20, 1)',
+      // backgroundColor: 'rgba(20, 20, 20, 1)',
+      backgroundColor: 'inherit',
       bottom: '0',
     }}
   >

@@ -113,19 +113,19 @@ const TextArea = styled.textarea`
   margin-top: 10px;
 `
 
-// const FooterStyles = styled.footer`
-//   margin: 0 auto;
-//   max-width: 950px;
-//   font-size: 16px;
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
+const FooterStyles = styled.footer`
+  margin: 0 auto;
+  max-width: 950px;
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
-//   a {
-//     text-decoration: none;
-//     color: #444;
-//     font-weight: 100;
-//   }
-// `
+  a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 100;
+  }
+`
 
 const ContactMe = styled.div`
   h3 {
@@ -196,11 +196,11 @@ const Contact = () => (
                         <h5>Leo Torres @ BobaBird Websites</h5>    
                         
                         <p>
-                        tel.<a href="tel:4159484792"> 415 948 4792</a>
+                        tel.<a href="tel:4159484792"> (415) 948-4792</a>
                         </p>
                         
                     </FormWrapper>   
-                    {/* <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
+                    <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
                     <hr /> 
                     </div>
                 <FooterStyles>
@@ -211,7 +211,7 @@ const Contact = () => (
                     <div style={{ textAlign: 'right', }}>
                     <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
                     </div>
-                </FooterStyles> */}
+                </FooterStyles>
             </Layout>
     </PageWrapper> 
 )

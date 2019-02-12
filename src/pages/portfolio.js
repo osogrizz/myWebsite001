@@ -8,6 +8,9 @@ import SEO from '../components/seo'
 
 const Wrapper = styled.div`
   background: #323944;
+  color: #4d4d4d;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
   @media  (max-width: 475px) {
     max-width: 100vw;
@@ -28,8 +31,7 @@ const Container = styled.div`
     max-width: 960px;
     min-height: 80vh;
     color: #4d4d4d;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    
 
     h1 {
       font-size: 4.25rem;
@@ -113,6 +115,20 @@ const Card = styled.div`
   }
   `
 
+const FooterStyles = styled.footer`
+margin: 0 auto;
+max-width: 950px;
+font-size: 16px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 100;
+}
+`
+
 const Portfolio = ({ data }) => (
   <Wrapper>
     <Layout>
@@ -181,6 +197,18 @@ const Portfolio = ({ data }) => (
         <Link to="/">Go back to the homepage</Link>
 
       </Container>
+      <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
+          <hr /> 
+          </div>
+      <FooterStyles>
+          <div>
+          Copyright © {new Date().getFullYear()},  CompanyName - All Rights Reserved
+          </div>
+
+          <div style={{ textAlign: 'right', }}>
+          <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
+          </div>
+      </FooterStyles>
     </Layout>
   </Wrapper>
 );
