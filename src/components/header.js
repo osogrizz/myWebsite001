@@ -62,8 +62,7 @@ const HeaderContainer = styled.div`
   padding: 1.45rem 1.0875rem;
       
   :first-child {  
-    width: 80%;
-    
+    width: 80%; 
   }
 
   @media  (max-width: 1486px) {
@@ -85,7 +84,13 @@ const LogoContainer = styled.div`
   min-width: 120px;
   text-decoration: none;
   padding-left: 0;
-  
+
+  img {
+    transition: all .8s;
+  }
+  img:hover {
+    transform: scale(.9) rotate(-5deg);
+  }
 
   @media (max-width: 1565px) {
     // max-width: 60vw;
@@ -116,13 +121,6 @@ const NavContainer = styled.div`
     }
    
   }
-  
-
-  // @media (max-width: 1565px) {
-  //   ul {
-  //     visibility: hidden;
-  //   }
-  // }
 `;
 
 const activeLinkStyle = {
@@ -134,9 +132,9 @@ const activeLinkStyle = {
 const Header = ({ siteTitle, data }) => (
   <HeaderWrapper>
     <HeaderContainer>
-      <LogoContainer>
+      <LogoContainer >
           <Link to="/" >
-            <Image style={{ maxHeight: '120px', maxWidth: '120px'}}/>
+            <Image id="logo" style={{ maxHeight: '120px', maxWidth: '120px'}}/>
           </Link>
       </LogoContainer>
 
