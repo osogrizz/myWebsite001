@@ -47,7 +47,7 @@ const Container = styled.div`
   }
 `
 const Wrapper = styled.div`
-  background: #222;
+  background: #323944;
   width: 100%;
 `
 

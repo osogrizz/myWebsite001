@@ -9,6 +9,8 @@ import SEO from '../components/seo'
 const PageWrapper = styled.div`
     background: #323944 !important;
     color: #4d4d4d;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `
 
 const FormWrapper = styled.div`  
@@ -51,6 +53,7 @@ const FormContainer = styled.div`
   grid-template-columns: 1fr;
   text-align: center;
   align-content: center;
+  
 `
 
 const InputStyles = styled.input`
@@ -59,6 +62,7 @@ const InputStyles = styled.input`
 `
 
 const Btn = styled.button`
+    margin: 50px auto;
     border-radius: 4px;
     font-weight: 600;
     font-size: 16px;
@@ -108,13 +112,6 @@ const Btn = styled.button`
 const TextArea = styled.textarea`
   margin-top: 10px;
 `
-
-// const LogoContainer = styled.div`
-//   padding-top: 5px;
-//   margin: 0 auto;
-//   max-width: 230px;
-//   margin-bottom: 1.45rem;
-// `
 
 // const FooterStyles = styled.footer`
 //   margin: 0 auto;

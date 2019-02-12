@@ -4,9 +4,17 @@ import styled from 'styled-components';
 import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
+import SEO from '../components/seo'
 
+const Wrapper = styled.div`
+  background: #323944;
 
-
+  @media  (max-width: 475px) {
+    max-width: 100vw;
+    padding: 0.025rem;
+    overflow: hidden;
+  }
+`
 
 const Container = styled.div`
     text-align: center;
@@ -20,6 +28,8 @@ const Container = styled.div`
     max-width: 960px;
     min-height: 80vh;
     color: #4d4d4d;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
     h1 {
       font-size: 4.25rem;
@@ -41,7 +51,8 @@ const Container = styled.div`
       display: block;
     }
 
-`;
+`
+
 const CardContainer = styled.div`
   display: flex;;
   justify-content: space-around;
@@ -55,7 +66,8 @@ const CardContainer = styled.div`
     display: block;
     padding: 0;
   }
-`;
+`
+
 const Card = styled.div`
   position: relative;
   margin: 20px;
@@ -99,21 +111,12 @@ const Card = styled.div`
     margin: 40px auto;
     width: 65vw;
   }
-  `;
-
-const Wrapper = styled.div`
-  background: #323944 !important;
-
-  @media  (max-width: 475px) {
-    max-width: 100vw;
-    padding: 0.025rem;
-    overflow: hidden;
-  }
-`;
+  `
 
 const Portfolio = ({ data }) => (
   <Wrapper>
     <Layout>
+    <SEO title="Portfolio" />
       <Container>
 
         <h1>Portfolio</h1>
