@@ -156,18 +156,19 @@ const Contact = () => (
                             <h3 className="decorated"><span>Contact Me</span></h3>
                         </ContactMe>      
                         
-                        <form action="#">
-                        <FormContainer>
+                        <form action="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                          <input type="hidden" name="form-name" value="contact" />
+                          <FormContainer>
 
-                        <InputStyles type="name" placeholder="Name"/>
+                          <InputStyles type="name" placeholder="Name"/>
 
 
-                        <InputStyles type="email" placeholder="Email"/>
+                          <InputStyles type="email" placeholder="Email"/>
 
-                        <TextArea name="" id="" cols="30" rows="6" placeholder="Message">
-                        </TextArea>
-                        <Btn type="submit"><span>Send</span></Btn>
-                        </FormContainer>  
+                          <TextArea name="" id="" cols="30" rows="6" placeholder="Message">
+                          </TextArea>
+                          <Btn type="submit"><span>Send</span></Btn>
+                          </FormContainer>  
                         </form>
 
                         <h5>QUESTIONS OR COMMENTS?</h5>

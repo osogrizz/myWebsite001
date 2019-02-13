@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://tender-hawking-1f8a53.netlify.com/* http://leo-torres.tech/:splat 301!
