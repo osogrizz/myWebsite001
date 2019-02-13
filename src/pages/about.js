@@ -58,20 +58,6 @@ const Wrapper = styled.div`
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `
 
-const FooterStyles = styled.footer`
-  margin: 0 auto;
-  max-width: 950px;
-  font-size: 16px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  a {
-    text-decoration: none;
-    /* color: #444; */
-    color: #6a6a6a;
-    font-weight: 100;
-  }
-`
 
 const About = ({ data }) => (
   <Wrapper>
@@ -92,18 +78,6 @@ const About = ({ data }) => (
           <Link to="/contact/"> Or, let's get started now.</Link>
         </p>
       </Container>
-      <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
-          <hr /> 
-          </div>
-      <FooterStyles>
-          <div>
-          Copyright © {new Date().getFullYear()},  Leo Torres - All Rights Reserved
-          </div>
-
-          <div style={{ textAlign: 'right', }}>
-          <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
-          </div>
-      </FooterStyles>
     </Layout>
   </Wrapper> 
 )

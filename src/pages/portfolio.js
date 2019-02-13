@@ -115,20 +115,20 @@ const Card = styled.div`
   }
   `
 
-const FooterStyles = styled.footer`
-margin: 0 auto;
-max-width: 950px;
-font-size: 16px;
-display: grid;
-grid-template-columns: 1fr 1fr;
+// const FooterStyles = styled.footer`
+// margin: 0 auto;
+// max-width: 950px;
+// font-size: 16px;
+// display: grid;
+// grid-template-columns: 1fr 1fr;
 
-a {
-  text-decoration: none;
-  /* color: #444; */
-  color: #6a6a6a;
-  font-weight: 100;
-}
-`
+// a {
+//   text-decoration: none;
+//   /* color: #444; */
+//   color: #6a6a6a;
+//   font-weight: 100;
+// }
+// `
 
 const Portfolio = ({ data }) => (
   <Wrapper>
@@ -198,8 +198,8 @@ const Portfolio = ({ data }) => (
         <Link to="/">Go back to the homepage</Link>
 
       </Container>
-      <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
-          <hr /> 
+      {/* <div style={{ margin: `0 auto`,maxWidth: `950px` }}> */}
+          {/* <hr /> 
           </div>
       <FooterStyles>
           <div>
@@ -209,7 +209,7 @@ const Portfolio = ({ data }) => (
           <div style={{ textAlign: 'right', }}>
           <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
           </div>
-      </FooterStyles>
+      </FooterStyles> */}
     </Layout>
   </Wrapper>
 );

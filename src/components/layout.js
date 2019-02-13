@@ -1,11 +1,27 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import styled from 'styled-components'
 
 import Header from "./header"
-import Footer from "../components/footer";
+import Footer from "../components/footer"
 import "./layout.css"
-import { relative } from "path";
+import { relative } from "path"
+
+const FooterStyles = styled.footer`
+margin: 0 auto;
+max-width: 950px;
+font-size: 16px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+a {
+  text-decoration: none;
+  /* color: #444; */
+  color: #6a6a6a;
+  font-weight: 100;
+}
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -31,12 +47,19 @@ const Layout = ({ children }) => (
           }}
         >
           <main>{children}</main>
-          {/* <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer> */}
         </div>
+          <div style={{ margin: `0 auto`,maxWidth: `950px` }}>
+            <hr /> 
+          </div>
+          <FooterStyles>
+              <div>
+              Copyright © {new Date().getFullYear()},  Leo Torres - All Rights Reserved
+              </div>
+
+              <div style={{ textAlign: 'right', }}>
+              <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
+              </div>
+          </FooterStyles>
         <Footer />
       </>
     )}

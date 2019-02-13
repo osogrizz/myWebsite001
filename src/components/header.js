@@ -94,7 +94,7 @@ const LogoContainer = styled.div`
     transition: all .1s;
   }
   img:hover {
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
   }
 
   @media (max-width: 1565px) {
