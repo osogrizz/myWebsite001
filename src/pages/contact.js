@@ -8,7 +8,7 @@ import SEO from '../components/seo'
 
 const PageWrapper = styled.div`
     background: #323944 !important;
-    color: #4d4d4d;
+    color: #6a6a6a;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `
@@ -122,7 +122,8 @@ const FooterStyles = styled.footer`
 
   a {
     text-decoration: none;
-    color: #444;
+    /* color: #444; */
+    color: #6a6a6a;
     font-weight: 100;
   }
 `
@@ -205,7 +206,7 @@ const Contact = () => (
                     </div>
                 <FooterStyles>
                     <div>
-                    Copyright © {new Date().getFullYear()},  CompanyName - All Rights Reserved
+                    Copyright © {new Date().getFullYear()},  Leo Torres - All Rights Reserved
                     </div>
 
                     <div style={{ textAlign: 'right', }}>

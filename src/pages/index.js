@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 const Wrapper = styled.div`
   background: #323944;
   width: 100%;
-  color: #4d4d4d;
+  color: #6a6a6a;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `
@@ -61,7 +61,8 @@ grid-template-columns: 1fr 1fr;
 
 a {
   text-decoration: none;
-  color: #444;
+  /* color: #444; */
+  color: #6a6a6a;
   font-weight: 100;
 }
 `
@@ -80,7 +81,7 @@ const IndexPage = ({ data }) => (
           </div>
       <FooterStyles>
           <div>
-          Copyright © {new Date().getFullYear()},  CompanyName - All Rights Reserved
+          Copyright © {new Date().getFullYear()},  Leo Torres - All Rights Reserved
           </div>
 
           <div style={{ textAlign: 'right', }}>
