@@ -188,28 +188,27 @@ const Portfolio = ({ data }) => (
           </Card>
 
           <Card>
+            <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
+              <Img
+
+                fluid={data.taco.fluid}
+              />
+            </a>
+          </Card>
+
+        </CardContainer>
+        {/* <CardContainer>
+          <Card>
             <Img
 
               fluid={data.card.fluid}
             />
           </Card>
-        </CardContainer>
+        </CardContainer> */}
 
         <Link to="/">Go back to the homepage</Link>
 
       </Container>
-      {/* <div style={{ margin: `0 auto`,maxWidth: `950px` }}> */}
-          {/* <hr /> 
-          </div>
-      <FooterStyles>
-          <div>
-          Copyright © {new Date().getFullYear()},  Leo Torres - All Rights Reserved
-          </div>
-
-          <div style={{ textAlign: 'right', }}>
-          <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
-          </div>
-      </FooterStyles> */}
     </Layout>
   </Wrapper>
 );
@@ -244,6 +243,11 @@ export const query = graphql`
       }
     }
     santaFe: imageSharp(fluid: {originalName: {eq: "santaFe.png" } } ) {
+      fluid(maxWidth: 400) {
+      ...GatsbyImageSharpFluid
+      }
+    }
+    taco: imageSharp(fluid: {originalName: {eq: "taco.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
       }

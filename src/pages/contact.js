@@ -150,7 +150,7 @@ const Contact = () => (
                 <SEO title="Contact" />
                     <FormWrapper>
                         
-                        <h4>Lorem ipsum dolor amet disrupt 3 wolf moon normcore</h4>
+                        <h4>Stop by and say ​“hi.”Or drop me a note.</h4>
 
                         <ContactMe>
                             <h3 className="decorated"><span>Contact Me</span></h3>
@@ -172,11 +172,8 @@ const Contact = () => (
 
                         <h5>QUESTIONS OR COMMENTS?</h5>
 
-                        <p>Lorem ipsum dolor amet disrupt 3 wolf moon normcore, keytar ramps lumbersexual
-                        thundercats snackwave church-key cliche blog. Flexitarian venmo tousled banjo
-                        ramps air plant PBR&B. Shaman jianbing mustache craft beer paleo polaroid, pabst
-                        lumbersexual man braid. Gluten-free marfa butcher mustache hot chicken, small
-                        batch occupy raclette vape actually cornhole slow-carb schlitz.
+                        <p>
+                          Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
                         </p>
 
                         <h5>Leo Torres @ BobaBird Websites</h5>    

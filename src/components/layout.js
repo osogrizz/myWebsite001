@@ -46,7 +46,7 @@ const Layout = ({ children }) => (
           style={{
             position: relative,
             margin: `0 auto`,
-            maxWidth: 960,
+            maxWidth: 1240,
             padding: `0px 1.0875rem 1.45rem`,
             paddingTop: 0,
           }}
@@ -62,7 +62,8 @@ const Layout = ({ children }) => (
               </div>
 
               <div style={{ textAlign: 'right', }}>
-              <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a>
+              {/* <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a> */}
+              <p>A BobaBird Website</p>
               </div>
           </FooterStyles>
         <Footer />

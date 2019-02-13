@@ -20,7 +20,7 @@ const Container = styled.div`
   p {
     font-size: 1.8rem;
     line-height: 2.9rem;
-    font-weight: 300;
+    font-weight: 200;
 
     a {
       text-align: left !important;
@@ -36,6 +36,8 @@ const Container = styled.div`
     &:hover {
       color: #1f2023;
       border-bottom: 2px solid;
+      text-shadow: none;
+      font-weight: 200;
     }
   }
 

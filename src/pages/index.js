@@ -36,6 +36,7 @@ const Container = styled.div`
   p {
     font-size: 1.8rem;
     color: #fff;
+    font-weight: 200;
   }
   a {
     color: #fff; 
