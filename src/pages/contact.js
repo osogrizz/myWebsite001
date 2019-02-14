@@ -167,7 +167,7 @@ const Contact = () => (
 
                             <InputStyles type="email"  name="email" placeholder="Email" required/>
 
-                            <TextArea name="textarea" id="" cols="30" rows="6" placeholder="Message" required>
+                            <TextArea name="message" id="" cols="30" rows="6" placeholder="Message" required>
                             </TextArea>
                             <Btn type="submit"><span>Send</span></Btn>
                           </FormContainer>  
