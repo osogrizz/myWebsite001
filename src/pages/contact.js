@@ -1,8 +1,6 @@
 import React from 'react'
-// import { Link } from 'gatsby'
 import styled from 'styled-components'
 
-// import Image from '../components/image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -121,7 +119,7 @@ const ContactMe = styled.div`
     position: relative;
     font-size: 30px;
     font-weight: 200;
-    z-index: -1;
+    /* z-index: -1; */ 
     text-align: center;
     margin-top: 60px;
     margin-bottom: 80px;
@@ -142,7 +140,8 @@ h3:before {
 }
 
 span {
-  font-family: 'Sacramento', cursive;
+  color: #6a6a6a !important;
+  /* font-family: 'Sacramento', cursive; */
   margin: 0 20px;
 }
 ` 

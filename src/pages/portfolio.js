@@ -218,7 +218,7 @@ export default Portfolio;
 export const query = graphql`
   query PortfolioQuery {
     card: imageSharp(fluid: {originalName: {eq: "homeBG.jpg" } } ) {
-      fluid(maxWidth: 1240) {
+      fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
       }
     }

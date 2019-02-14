@@ -17,7 +17,6 @@ grid-template-columns: 1fr 1fr;
 
 a {
   text-decoration: none;
-  /* color: #444; */
   color: #6a6a6a;
   font-weight: 100;
 }
@@ -62,7 +61,6 @@ const Layout = ({ children }) => (
               </div>
 
               <div style={{ textAlign: 'right', }}>
-              {/* <a href="https://leo-torres.com" target="_blank" rel="noopener noreferrer">A BobaBird Website</a> */}
               <p>A BobaBird Website</p>
               </div>
           </FooterStyles>
