@@ -115,6 +115,7 @@ const TextArea = styled.textarea`
 
 const ContactMe = styled.div`
   h3 {
+    color: #6a6a6a;
     position: relative;
     font-size: 30px;
     font-weight: 200;
@@ -156,18 +157,17 @@ const Contact = () => (
                             <h3 className="decorated"><span>Contact Me</span></h3>
                         </ContactMe>      
                         
-                        <form action="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <form action="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
                           <input type="hidden" name="form-name" value="contact" />
+
                           <FormContainer>
+                            <InputStyles type="name" name="name" placeholder="Name" required/>
 
-                          <InputStyles type="name" placeholder="Name" required/>
+                            <InputStyles type="email"  name="email" placeholder="Email" required/>
 
-
-                          <InputStyles type="email" placeholder="Email" required/>
-
-                          <TextArea name="" id="" cols="30" rows="6" placeholder="Message" required>
-                          </TextArea>
-                          <Btn type="submit"><span>Send</span></Btn>
+                            <TextArea name="textarea" id="" cols="30" rows="6" placeholder="Message" required>
+                            </TextArea>
+                            <Btn type="submit"><span>Send</span></Btn>
                           </FormContainer>  
                         </form>
 
