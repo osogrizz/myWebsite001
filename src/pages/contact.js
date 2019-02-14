@@ -160,12 +160,12 @@ const Contact = () => (
                           <input type="hidden" name="form-name" value="contact" />
                           <FormContainer>
 
-                          <InputStyles type="name" placeholder="Name"/>
+                          <InputStyles type="name" placeholder="Name" required/>
 
 
-                          <InputStyles type="email" placeholder="Email"/>
+                          <InputStyles type="email" placeholder="Email" required/>
 
-                          <TextArea name="" id="" cols="30" rows="6" placeholder="Message">
+                          <TextArea name="" id="" cols="30" rows="6" placeholder="Message" required>
                           </TextArea>
                           <Btn type="submit"><span>Send</span></Btn>
                           </FormContainer>  
