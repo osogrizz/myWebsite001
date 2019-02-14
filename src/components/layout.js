@@ -6,7 +6,6 @@ import styled from 'styled-components'
 import Header from "./header"
 import Footer from "../components/footer"
 import "./layout.css"
-import { relative } from "path"
 
 const FooterStyles = styled.footer`
 margin: 0 auto;
