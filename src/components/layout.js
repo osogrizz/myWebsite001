@@ -7,7 +7,15 @@ import Header from "./header"
 import Footer from "../components/footer"
 import "./layout.css"
 
-const FooterStyles = styled.footer`
+const LayoutWrapper = styled.div`
+  position: relative;
+  margin: 0 auto;
+  max-width: 1240;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+`
+
+const TopFooter = styled.footer`
 margin: 0 auto;
 max-width: 1120px;
 font-size: 16px;
@@ -40,21 +48,13 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            position: relative,
-            margin: `0 auto`,
-            maxWidth: 1240,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
+        <LayoutWrapper>
           <main>{children}</main>
-        </div>
+        </LayoutWrapper>
           <div style={{ margin: `0 auto`,maxWidth: `1120px` }}>
             <hr /> 
           </div>
-          <FooterStyles>
+          <TopFooter>
               <div>
               Copyright © {new Date().getFullYear()}, Leo Torres - All Rights Reserved
               </div>
@@ -62,7 +62,7 @@ const Layout = ({ children }) => (
               <div style={{ textAlign: 'right', }}>
               <p>A BobaBird Website</p>
               </div>
-          </FooterStyles>
+          </TopFooter>
         <Footer />
       </>
     )}
