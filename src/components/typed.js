@@ -63,7 +63,7 @@ const TypedText = () => (
         <TypedJS   
             strings={[
                 'Leo Torres zsc',
-                'Leo Torres | Web Developer'
+                'Leo Torres Web Developer'
             ]}
         />
     </Wrapper>
