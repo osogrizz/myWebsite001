@@ -31,6 +31,16 @@ a {
 @media (max-width: 750px) {
   margin: 0 10px;
 }
+`
+
+const FooterBreak = styled.div`
+  margin: 0 auto;
+  max-width: 1120px;
+
+@media (max-width: 750px) {
+  margin: 0 10px;
+}
+
 
 `
 
@@ -51,9 +61,9 @@ const Layout = ({ children }) => (
         <LayoutWrapper>
           <main>{children}</main>
         </LayoutWrapper>
-          <div style={{ margin: `0 auto`,maxWidth: `1120px` }}>
+          <FooterBreak>
             <hr /> 
-          </div>
+          </FooterBreak>
           <TopFooter>
               <div>
               Copyright © {new Date().getFullYear()}, Leo Torres - All Rights Reserved
