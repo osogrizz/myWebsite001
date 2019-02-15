@@ -33,7 +33,9 @@ class TypedJS extends Component {
         const options = {
             strings: strings,
         typeSpeed: 50,
-        backSpeed: 50
+        backSpeed: 50,
+        backDelay: 70,
+        smartBackspace: true
         };
         this.typed = new Typed(this.el, options);
     }
@@ -47,7 +49,7 @@ class TypedJS extends Component {
     return (
         <Wrapper>
             <span 
-                style={{ whiteSpace: 'pre' }}
+                style={{ whiteSpace: 'pre-wrap' }}
                 ref={(el) => {this.el = el}}
             />
         </Wrapper> 
@@ -60,7 +62,7 @@ const TypedText = () => (
     <Wrapper >
         <TypedJS   
             strings={[
-                'Leo Torres',
+                'Leo Torres zsc',
                 'Leo Torres | Web Developer'
             ]}
         />
