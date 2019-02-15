@@ -60,7 +60,9 @@ function SEO({ description, lang, meta, keywords, title }) {
                   : []
               )
               .concat(meta)}
-          />
+          >
+          {/* <script type="module" src="dist/main.js" crossorigin></script> */}
+          </Helmet>
         )
       }}
     />

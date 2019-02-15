@@ -1,9 +1,9 @@
-import React from "react"
-import styled from 'styled-components';
-// import { Link } from "gatsby"
+import React from 'react'
+import styled from 'styled-components'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../components/layout'
+import SEO from '../components/seo'
+import TypedText from '../components/typed'
 
 const Wrapper = styled.div`
   background: #323944;
@@ -45,6 +45,7 @@ const Container = styled.div`
       border-bottom: 2px solid;
     }
   }
+
   @media (max-width: 475px) {
     h1 {
       padding-top: 0;
@@ -53,13 +54,15 @@ const Container = styled.div`
   }
 `
 
-
 const IndexPage = ({ data }) => (
   <Wrapper>  
     <Layout>
       <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
       <Container>
-        <h1>Leo Torres | Web Developer</h1>
+        {/* <h1>Leo Torres | Web Developer</h1> */}
+        <h1>
+          <TypedText />
+        </h1>
         <h2>Websites, Blogs, E-Commerce</h2>
         <p>Custom sites for what you need.</p>
       </Container>
