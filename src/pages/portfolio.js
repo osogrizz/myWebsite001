@@ -78,6 +78,11 @@ const Card = styled.div`
   border-radius: 4px;
   min-width: 400px;
   box-shadow: 0 8px 26px 0 rgba(0, 0, 0, 0.15), 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  transition: all .5s ease;
+
+  &:hover {
+    transform: scale3d(1.04, 1.04, 1.04);
+  }
 
   h1 {
     position: relative;
@@ -114,21 +119,6 @@ const Card = styled.div`
     width: 65vw;
   }
   `
-
-// const FooterStyles = styled.footer`
-// margin: 0 auto;
-// max-width: 950px;
-// font-size: 16px;
-// display: grid;
-// grid-template-columns: 1fr 1fr;
-
-// a {
-//   text-decoration: none;
-//   /* color: #444; */
-//   color: #6a6a6a;
-//   font-weight: 100;
-// }
-// `
 
 const Portfolio = ({ data }) => (
   <Wrapper>
