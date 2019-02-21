@@ -47,26 +47,29 @@ class TypedJS extends Component {
       
   render() {
     return (
-        <Wrapper>
-            <span 
-                style={{ whiteSpace: 'pre-wrap' }}
-                ref={(el) => {this.el = el}}
-            />
-        </Wrapper> 
+      <Wrapper>
+        <span 
+          style={{ whiteSpace: 'pre-wrap' }}
+          ref={(el) => {this.el = el}}
+        />
+      </Wrapper> 
     )
   }
 }
 
 
 const TypedText = () => (
-    <Wrapper >
-        <TypedJS   
-            strings={[
-                'Leo Torres zsc',
+  <Wrapper>
+    <TypedJS   
+      strings={[
+                'Leo to',
+                'Leo',
+                'Leo Torres Web Devel0per',
+                'Leo Torres Web Devel',
                 'Leo Torres Web Developer'
             ]}
-        />
-    </Wrapper>
+    />
+  </Wrapper>
 )
 
 export default TypedText
