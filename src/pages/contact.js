@@ -6,6 +6,13 @@ import SEO from '../components/seo'
 
 const PageWrapper = styled.div`
     background: #323944 !important;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-kerning: normal;
+    -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+    -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+    -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+    font-feature-settings: "kern", "liga", "clig", "calt";
     color: #6a6a6a;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -14,7 +21,7 @@ const PageWrapper = styled.div`
 const FormWrapper = styled.div`  
   margin: 0 auto;
   text-align: center;
-  max-width: 1050px;
+  max-width: 1050px !important;
   padding-bottom: 60px;
 
   h5 {
@@ -114,79 +121,83 @@ const TextArea = styled.textarea`
 `
 
 const ContactMe = styled.div`
-  h3 {
-    color: #6a6a6a !important;
+  h1 {
+    /* color: #6a6a6a !important; */
+    color: #fff !important;
     position: relative;
-    font-size: 30px;
-    font-weight: 200;
+    font-size: 70px;
+    font-weight: 300;
     /* z-index: -1; */ 
     text-align: center;
     margin-top: 60px;
     margin-bottom: 80px;
     overflow: hidden;
   }
-  h3:before, h3:after {
+  h1:before, h1:after {
     position: absolute;
     top: 50%;
     overflow: hidden;
     width: 51%;
     height: 1px;
     content: '\a0';
-    background-color: #444;
+    /* background-color: #444; */
+    background-color: #fff;
 }
-h3:before {
+h1:before {
     margin-left: -50%;
     text-align: right;
 }
 
 span {
-  color: #6a6a6a !important;
+  /* color: #6a6a6a !important; */
+  color: #fff;
   /* font-family: 'Sacramento', cursive; */
   margin: 0 20px;
 }
 ` 
 
 const Contact = () => (
-    <PageWrapper >
-        <Layout>
-                <SEO title="Contact" />
-                    <FormWrapper>
+  <PageWrapper>
+    <Layout>
+      <SEO title="Contact" />
+      <FormWrapper>
+
+        <h1 style={{  fontWeight: 300, fontSize: '4.25rem', marginBottom: '120px', marginTop: '1.45rem' }}>Contact</h1>            
+        <h4>Stop by and say ​“hi.”Or drop me a note.</h4>
+
+        {/* <ContactMe>
+          <h1 className="decorated"><span>Contact Me</span></h1>
+        </ContactMe>       */}
                         
-                        <h4>Stop by and say ​“hi.”Or drop me a note.</h4>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
 
-                        <ContactMe>
-                            <h3 className="decorated"><span>Contact Me</span></h3>
-                        </ContactMe>      
-                        
-                        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" >
-                          <input type="hidden" name="form-name" value="contact" />
+          <FormContainer>
+            <InputStyles type="name" name="name" placeholder="Name" required />
 
-                          <FormContainer>
-                            <InputStyles type="name" name="name" placeholder="Name" required/>
+            <InputStyles type="email" name="email" placeholder="Email" required />
 
-                            <InputStyles type="email"  name="email" placeholder="Email" required/>
+            <TextArea name="message" id="" cols="30" rows="6" placeholder="Message" required />
+            <Btn type="submit"><span>Send</span></Btn>
+          </FormContainer>  
+        </form>
 
-                            <TextArea name="message" id="" cols="30" rows="6" placeholder="Message" required>
-                            </TextArea>
-                            <Btn type="submit"><span>Send</span></Btn>
-                          </FormContainer>  
-                        </form>
+        <h5>QUESTIONS OR COMMENTS?</h5>
 
-                        <h5>QUESTIONS OR COMMENTS?</h5>
-
-                        <p>
+        <p>
                           Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
-                        </p>
+        </p>
 
-                        <h5>Leo Torres @ BobaBird Websites</h5>    
+        <h5>Leo Torres @ BobaBird Websites</h5>    
                         
-                        <p>
-                        tel.<a href="tel:4159484792"> (415) 948-4792</a>
-                        </p>
+        <p>
+                        tel.
+          <a href="tel:4159484792"> (415) 948-4792</a>
+        </p>
                         
-                    </FormWrapper>   
-            </Layout>
-    </PageWrapper> 
+      </FormWrapper>   
+    </Layout>
+  </PageWrapper> 
 )
 
 export default Contact

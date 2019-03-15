@@ -60,7 +60,6 @@ const IndexPage = ({ data }) => (
     <Layout>
       <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
       <Container>
-        {/* <h1>Leo Torres | Web Developer</h1> */}
         <h1>
           <TypedText />
         </h1>

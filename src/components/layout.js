@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from 'styled-components'
 
 import Header from "./header"
-import Footer from "../components/footer"
+import Footer from "./footer"
 import "./layout.css"
 
 const LayoutWrapper = styled.div`
@@ -61,18 +61,21 @@ const Layout = ({ children }) => (
         <LayoutWrapper>
           <main>{children}</main>
         </LayoutWrapper>
-          <FooterBreak>
-            <hr /> 
-          </FooterBreak>
-          <TopFooter>
-              <div>
-              Copyright © {new Date().getFullYear()}, Leo Torres - All Rights Reserved
-              </div>
+        <FooterBreak>
+          <hr /> 
+        </FooterBreak>
+        <TopFooter>
+          <div>
+              Copyright © 
+            {' '}
+            {new Date().getFullYear()}
+, Leo Torres - All Rights Reserved
+          </div>
 
-              <div style={{ textAlign: 'right', }}>
-              <p>A BobaBird Website</p>
-              </div>
-          </TopFooter>
+          <div style={{ textAlign: 'right', }}>
+            <p>A BobaBird Website</p>
+          </div>
+        </TopFooter>
         <Footer />
       </>
     )}

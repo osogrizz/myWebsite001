@@ -30,7 +30,8 @@ const Container = styled.div`
     margin-bottom: 200px;
     max-width: 960px;
     min-height: 80vh;
-    color: #4d4d4d;
+    /* color: #4d4d4d; */
+    color: #6a6a6a;
     
 
     h1 {
@@ -123,7 +124,7 @@ const Card = styled.div`
 const Portfolio = ({ data }) => (
   <Wrapper>
     <Layout>
-    <SEO title="Portfolio" />
+      <SEO title="Portfolio" />
       <Container>
 
         <h1>Portfolio</h1>
