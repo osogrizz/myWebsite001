@@ -50,7 +50,7 @@ const Container = styled.div`
         border-bottom: 2px solid;
       }
     }
-    @media (max-width: 475px) {
+    @media screen and (max-width: 475px) {
       display: block;
     }
 
@@ -59,13 +59,13 @@ const Container = styled.div`
 const CardContainer = styled.div`
   display: flex;;
   justify-content: space-around;
-  // padding: 1.45rem 1.0875rem 1.45rem;
+  /* padding: 1.45rem 1.0875rem 1.45rem; */
 
-  @media (max-width: 475px) {
+  @media screen and (max-width: 475px) {
     display: block;
     padding: 0;
   }
-  @media (min-width: 476px) and (max-width: 1315px) {
+  @media screen and (min-width: 476px) and (max-width: 1315px) {
     display: block;
     padding: 0;
   }
