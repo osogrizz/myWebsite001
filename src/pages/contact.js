@@ -1,3 +1,4 @@
+/* eslint-disable no-irregular-whitespace */
 import React from 'react'
 import styled from 'styled-components'
 
@@ -120,41 +121,41 @@ const TextArea = styled.textarea`
   margin-top: 10px;
 `
 
-const ContactMe = styled.div`
-  h1 {
-    /* color: #6a6a6a !important; */
-    color: #fff !important;
-    position: relative;
-    font-size: 70px;
-    font-weight: 300;
-    /* z-index: -1; */ 
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 80px;
-    overflow: hidden;
-  }
-  h1:before, h1:after {
-    position: absolute;
-    top: 50%;
-    overflow: hidden;
-    width: 51%;
-    height: 1px;
-    content: '\a0';
-    /* background-color: #444; */
-    background-color: #fff;
-}
-h1:before {
-    margin-left: -50%;
-    text-align: right;
-}
+// const ContactMe = styled.div`
+//   h1 {
+//     /* color: #6a6a6a !important; */
+//     color: #fff !important;
+//     position: relative;
+//     font-size: 70px;
+//     font-weight: 300;
+//     /* z-index: -1; */ 
+//     text-align: center;
+//     margin-top: 60px;
+//     margin-bottom: 80px;
+//     overflow: hidden;
+//   }
+//   h1:before, h1:after {
+//     position: absolute;
+//     top: 50%;
+//     overflow: hidden;
+//     width: 51%;
+//     height: 1px;
+//     content: '\a0';
+//     /* background-color: #444; */
+//     background-color: #fff;
+// }
+// h1:before {
+//     margin-left: -50%;
+//     text-align: right;
+// }
 
-span {
-  /* color: #6a6a6a !important; */
-  color: #fff;
-  /* font-family: 'Sacramento', cursive; */
-  margin: 0 20px;
-}
-` 
+// span {
+//   /* color: #6a6a6a !important; */
+//   color: #fff;
+//   /* font-family: 'Sacramento', cursive; */
+//   margin: 0 20px;
+// }
+// ` 
 
 const Contact = () => (
   <PageWrapper>
@@ -163,11 +164,7 @@ const Contact = () => (
       <FormWrapper>
 
         <h1 style={{  fontWeight: 300, fontSize: '4.25rem', marginBottom: '120px', marginTop: '1.45rem' }}>Contact</h1>            
-        <h4>Stop by and say ​“hi.”Or drop me a note.</h4>
-
-        {/* <ContactMe>
-          <h1 className="decorated"><span>Contact Me</span></h1>
-        </ContactMe>       */}
+        <h4>Stop by and say ​“hi”. Or drop me a note.</h4>
                         
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
@@ -185,13 +182,13 @@ const Contact = () => (
         <h5>QUESTIONS OR COMMENTS?</h5>
 
         <p>
-                          Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
+          Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
         </p>
 
         <h5>Leo Torres @ BobaBird Websites</h5>    
                         
         <p>
-                        tel.
+          tel.
           <a href="tel:4159484792"> (415) 948-4792</a>
         </p>
                         

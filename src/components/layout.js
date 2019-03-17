@@ -13,6 +13,20 @@ const LayoutWrapper = styled.div`
   max-width: 1240;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
+
+  :root {
+  --bg: white;
+  --text-color: #555;
+  --link-color: #639A67;
+  --link-hover: #205D67;
+}
+
+.dark-theme {
+  --bg: #323944;
+  --text-color: #6a6a6a;
+  --link-color: #4d4d4d;
+  --link-hover: #898989;
+}
 `
 
 const TopFooter = styled.footer`

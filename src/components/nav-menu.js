@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import Toggle from '../Utilities/toggle';
+// import Toggle from '../utilities/toggle';
 
 const MobileNavWrapper = styled.div`
     position: absolute;
     display: flex;
-    // justify-content: center;
-    // text-align: center;
+    /* justify-content: center;
+    text-align: center; */
     top: 4rem;
     top: 80px;
     left: 0;
@@ -43,38 +43,29 @@ const MobileNavWrapper = styled.div`
     }
 `;
 
-export default class NavMenu extends Component {
-  render() {
-    const { children, toggle, on } = this.props;
-    return (
-      <>
-        <Toggle>
-          {({ on, toggle }) => (
+const NavMenu = () => (
 
-          <MobileNavWrapper>
-            <ul>
-              <li>
-                <Link to="/" onClick={toggle}>Home</Link>
-              </li>
-              <hr />
-              <li>
-                <Link to="/about/" onClick={toggle}>About</Link>
-              </li>
-              <hr />
-              <li>
-                <Link to="/contact/" onClick={toggle}>Contact</Link>
-              </li>
-              <hr />
-              <li>
-                <Link to="/portfolio/" onClick={toggle}>Portfolio</Link>
-              </li>
-            </ul>
-          </MobileNavWrapper>
+  <MobileNavWrapper>
+    <ul>
+      <li>
+        <Link to="/">Home</Link>
+      </li>
+      <hr />
+      <li>
+        <Link to="/about/">About</Link>
+      </li>
+      <hr />
+      <li>
+        <Link to="/contact/">Contact</Link>
+      </li>
+      <hr />
+      <li>
+        <Link to="/portfolio/">Portfolio</Link>
+      </li>
+    </ul>
+  </MobileNavWrapper>
+  
+)
+  
 
-        )}
-        </Toggle>
-
-      </>
-    );
-  }
-}
+export default NavMenu
