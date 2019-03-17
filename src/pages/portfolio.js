@@ -188,14 +188,6 @@ const Portfolio = ({ data }) => (
           </Card>
 
         </CardContainer>
-        {/* <CardContainer>
-          <Card>
-            <Img
-
-              fluid={data.card.fluid}
-            />
-          </Card>
-        </CardContainer> */}
 
         <Link to="/">Go back to the homepage</Link>
 

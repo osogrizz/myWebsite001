@@ -55,7 +55,7 @@ const Container = styled.div`
   }
 `
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Wrapper>  
     <Layout>
       <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
