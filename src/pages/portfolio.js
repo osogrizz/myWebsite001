@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types"
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
@@ -20,39 +21,39 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.div`
-    text-align: center;
-    position: relative;
-    z-index: 2;
-    margin: 0 auto;
-    padding: 0px 1.0875rem 1.45rem;
-    padding-top: 0;
-    margin-top: 1.45rem;
-    margin-bottom: 200px;
-    max-width: 960px;
-    min-height: 80vh;
-    /* color: #4d4d4d; */
-    color: #6a6a6a;
-    
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+  margin-top: 1.45rem;
+  margin-bottom: 200px;
+  max-width: 960px;
+  min-height: 80vh;
+  /* color: #4d4d4d; */
+  color: #6a6a6a;
+  
 
-    h1 {
-      font-size: 4.25rem;
-      font-weight: 300;
+  h1 {
+    font-size: 4.25rem;
+    font-weight: 300;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  a {
+    font-size: 1.2rem;
+    color: #4d4d4d;
+    text-decoration: none;
+    &:hover {
+      color: #898989;
+      border-bottom: 2px solid;
     }
-    p {
-      font-size: 1.3rem;
-    }
-    a {
-      font-size: 1.2rem;
-      color: #4d4d4d;
-      text-decoration: none;
-      &:hover {
-        color: #898989;
-        border-bottom: 2px solid;
-      }
-    }
-    @media screen and (max-width: 475px) {
-      display: block;
-    }
+  }
+  @media screen and (max-width: 475px) {
+    display: block;
+  }
 
 `
 
@@ -237,3 +238,7 @@ export const query = graphql`
     }
   }
 `;
+
+Portfolio.propTypes = {
+  data: PropTypes.node.isRequired,
+}
