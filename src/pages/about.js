@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react"
 import styled from 'styled-components';
 import { Link } from "gatsby"
@@ -61,10 +62,10 @@ const Wrapper = styled.div`
 `
 
 
-const About = ({ data }) => (
+const About = () => (
   <Wrapper>
     <Layout>
-    <SEO title="About" />
+      <SEO title="About" />
       <Container>
         <title>About</title>
         <h1>About</h1>
@@ -73,7 +74,7 @@ const About = ({ data }) => (
           man team that can provide you with a professional, great looking website to showcase
           your Blog, Business or whatever it is you want to share.
         </p>
-        <p >
+        <p>
           <Link to="/portfolio/"> Take a look at some of my work.</Link>
         </p> 
         <p>

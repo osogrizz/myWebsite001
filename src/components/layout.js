@@ -7,6 +7,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 
+
 const LayoutWrapper = styled.div`
   position: relative;
   margin: 0 auto;
@@ -29,35 +30,6 @@ const LayoutWrapper = styled.div`
 }
 `
 
-const TopFooter = styled.footer`
-margin: 0 auto;
-max-width: 1120px;
-font-size: 16px;
-display: grid;
-grid-template-columns: 1fr 1fr;
-
-a {
-  text-decoration: none;
-  color: #6a6a6a;
-  font-weight: 100;
-}
-
-@media (max-width: 750px) {
-  margin: 0 10px;
-}
-`
-
-const FooterBreak = styled.div`
-  margin: 0 auto;
-  max-width: 1120px;
-
-@media (max-width: 750px) {
-  margin: 0 10px;
-}
-
-
-`
-
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -75,22 +47,7 @@ const Layout = ({ children }) => (
         <LayoutWrapper>
           <main>{children}</main>
         </LayoutWrapper>
-        <FooterBreak>
-          <hr /> 
-        </FooterBreak>
-        <TopFooter>
-          <div>
-              Copyright © 
-            {' '}
-            {new Date().getFullYear()}
-, Leo Torres - All Rights Reserved
-          </div>
-
-          <div style={{ textAlign: 'right', }}>
-            <p>A BobaBird Website</p>
-          </div>
-        </TopFooter>
-        <Footer />
+        <Footer />  
       </>
     )}
   />

@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo'
+import Footer from "../components/footer"
 
 const Wrapper = styled.div`
   background: #323944;
@@ -90,10 +91,10 @@ const Card = styled.div`
     position: relative;
     margin-top: 0;
     z-index: 12;
-    // visibility: hidden;
+    /* visibility: hidden; */
     padding: 0.8rem;
     &:hover {
-      // visibility: visible;
+      /* visibility: visible; */
     }
   }
 
@@ -123,78 +124,78 @@ const Card = styled.div`
   `
 
 const Portfolio = ({ data }) => (
-  <Wrapper>
-    <Layout>
-      <SEO title="Portfolio" />
-      <Container>
+  <>
+    <Wrapper>
+      <Layout>
+        <SEO title="Portfolio" />
+        <Container>
 
-        <h1>Portfolio</h1>
-        <p>Please have a look at some examples of my work.</p>
+          <h1>Portfolio</h1>
+          <p>Please have a look at some examples of my work.</p>
 
-        <CardContainer>
-          <Card>
-            <a href="https://somaticwellness-coach.com/" target="_blank" rel="noopener noreferrer">
-              <Img
-                style={{ height: '100%' }}
-                fluid={data.somatic.fluid}
-              />
-            </a>
-          </Card>
+          <CardContainer>
+            <Card>
+              <a href="https://somaticwellness-coach.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  style={{ height: '100%' }}
+                  fluid={data.somatic.fluid}
+                />
+              </a>
+            </Card>
 
-          <Card>
-            <a href="https://pizza-f23b6.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
-              <Img
-                style={{ height: '100%' }}
-                fluid={data.pizza.fluid}
-              />
-            </a>
-          </Card>
+            <Card>
+              <a href="https://pizza-f23b6.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  style={{ height: '100%' }}
+                  fluid={data.pizza.fluid}
+                />
+              </a>
+            </Card>
 
-          <Card>
-            <a href="https://cocky-kowalevski-a61a98.netlify.com/" target="_blank" rel="noopener noreferrer">
-              <Img
-                // style={{ height: '100%' }}
-                fluid={data.calc.fluid}
-              />
-            </a>
-          </Card>
-        </CardContainer>
+            <Card>
+              <a href="https://cocky-kowalevski-a61a98.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  fluid={data.calc.fluid}
+                />
+              </a>
+            </Card>
+          </CardContainer>
 
-        <CardContainer>
-          <Card>
-            <a href="https://markdown-preview.netlify.com/" target="_blank" rel="noopener noreferrer">
-              <Img
-                style={{ height: '100%' }}
-                fluid={data.markDown.fluid}
-              />
-            </a>
-          </Card>
+          <CardContainer>
+            <Card>
+              <a href="https://markdown-preview.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  style={{ height: '100%' }}
+                  fluid={data.markDown.fluid}
+                />
+              </a>
+            </Card>
 
-          <Card>
-            <a href="https://gatsby-starter-santa-fe.netlify.com/" target="_blank" rel="noopener noreferrer">
-              <Img
-                style={{ height: '100%' }}
-                fluid={data.santaFe.fluid}
-              />
-            </a>
-          </Card>
+            <Card>
+              <a href="https://gatsby-starter-santa-fe.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  style={{ height: '100%' }}
+                  fluid={data.santaFe.fluid}
+                />
+              </a>
+            </Card>
 
-          <Card>
-            <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
-              <Img
+            <Card>
+              <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  fluid={data.taco.fluid}
+                />
+              </a>
+            </Card>
 
-                fluid={data.taco.fluid}
-              />
-            </a>
-          </Card>
+          </CardContainer>
 
-        </CardContainer>
+          <Link to="/">Go back to the homepage</Link>
 
-        <Link to="/">Go back to the homepage</Link>
-
-      </Container>
-    </Layout>
-  </Wrapper>
+        </Container>
+      </Layout>
+    </Wrapper>
+  </>
 );
 
 export default Portfolio;
