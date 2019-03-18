@@ -15,7 +15,6 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.div`
-  position: relative;
   text-align: center;
   margin: 0 auto;
   padding: 0px 1.0875rem 1.45rem;

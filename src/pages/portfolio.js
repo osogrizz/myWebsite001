@@ -6,9 +6,9 @@ import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo'
-import Footer from "../components/footer"
 
 const Wrapper = styled.div`
+  -webkit-transform: translate3d(0,0,0);
   background: #323944;
   color: #6a6a6a;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -23,7 +23,6 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   text-align: center;
-  position: relative;
   z-index: 2;
   margin: 0 auto;
   padding: 0px 1.0875rem 1.45rem;
@@ -74,7 +73,7 @@ const CardContainer = styled.div`
 `
 
 const Card = styled.div`
-  position: relative;
+
   margin: 20px;
   text-align: center;
   overflow: hidden;
@@ -88,7 +87,7 @@ const Card = styled.div`
   }
 
   h1 {
-    position: relative;
+
     margin-top: 0;
     z-index: 12;
     /* visibility: hidden; */
@@ -99,7 +98,7 @@ const Card = styled.div`
   }
 
   p {
-    position: relative;
+
     z-index: 99;
     padding: 0.8rem;
     font-size: 18px;

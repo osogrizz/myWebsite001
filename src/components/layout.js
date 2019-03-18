@@ -9,7 +9,6 @@ import "./layout.css"
 
 
 const LayoutWrapper = styled.div`
-  position: relative;
   margin: 0 auto;
   max-width: 1240;
   padding: 0px 1.0875rem 1.45rem;

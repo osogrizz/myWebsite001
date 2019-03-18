@@ -7,7 +7,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Container = styled.div`
-  position: relative;
   text-align: center;
   z-index: 2;
   margin: 0 auto;
