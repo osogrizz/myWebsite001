@@ -84,6 +84,9 @@ const LogoContainer = styled.div`
   text-decoration: none;
   padding-left: 0;
   transition: all .1s;
+  padding: 3px;
+  border: 3px solid orange;
+  border-radius: 50%;
 
   &:hover {
     transition: 0.1s cubic-bezier(0, 1.8, 1, 1.8);
@@ -121,13 +124,22 @@ const NavContainer = styled.div`
       transition: all 230ms ease;
       border-bottom: 3px solid cornflowerblue;
     }
-   
+  }
+
+  @media (max-width: 500px) {
+    ul {
+      li {
+        margin-right: 7px;
+        font-size: 18px;
+      }
+    }
+    margin-top: 40px;
   }
 `;
 
 const activeLinkStyle = {
   borderBottom: '1px solid cornflowerblue',
-  fontWeight: 490,
+  fontWeight: 500,
 }
 
 
