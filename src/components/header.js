@@ -1,13 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-// import { FiMenu } from 'react-icons/fi';
-// import Toggle from '../Utilities/toggle';
-// import NavMenu from './nav-menu';
-// import Img from 'gatsby-image'
-// import { graphql } from 'gatsby'
+
 import Image from './image'
-// import NavMenu from './nav-menu';
+
 
 const HeaderWrapper = styled.div`
   position: relative;
