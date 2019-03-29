@@ -1,13 +1,8 @@
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-// import { FiMenu } from 'react-icons/fi';
-// import Toggle from '../Utilities/toggle';
-// import NavMenu from './nav-menu';
-// import Img from 'gatsby-image'
-// import { graphql } from 'gatsby'
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import ThemePicker from './ThemePicker'
 import Image from './image'
-// import NavMenu from './nav-menu';
 
 const HeaderWrapper = styled.div`
   position: relative;
@@ -50,6 +45,10 @@ const HeaderWrapper = styled.div`
     &:hover {
       transition: all 230ms ease;
     }
+  }
+
+  @media (max-width: 1486px) {
+    height: 300px;
   }
 `;
 
@@ -141,7 +140,7 @@ const Header = ({ siteTitle, data }) => (
         </Link>
       </LogoContainer>
 
-      {/* ThemePicker */}
+      
 
 
       <NavContainer>
@@ -157,6 +156,9 @@ const Header = ({ siteTitle, data }) => (
           </li>
           <li>
             <Link to="/portfolio/" activeStyle={activeLinkStyle}>Portfolio</Link>
+          </li>
+          <li>
+            <ThemePicker />
           </li>
         </ul>
       </NavContainer>
