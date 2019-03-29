@@ -88,8 +88,7 @@ const LogoContainer = styled.div`
 
   &:hover {
     transition: 0.1s cubic-bezier(0, 1.8, 1, 1.8);
-    /* transform: scale(1.05); */
-    transform:  translateY(0.7em)
+    transform:  translateY(0.7em) scale(1.05);
   }
 
   img {
@@ -141,6 +140,8 @@ const Header = ({ siteTitle, data }) => (
           <Image id="logo" style={{ maxHeight: '120px', maxWidth: '120px'}} />
         </Link>
       </LogoContainer>
+
+      {/* ThemePicker */}
 
 
       <NavContainer>
