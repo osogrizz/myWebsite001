@@ -87,11 +87,13 @@ const LogoContainer = styled.div`
   transition: all .1s;
 
   &:hover {
-    transform: scale(1.05);
+    transition: 0.1s cubic-bezier(0, 1.8, 1, 1.8);
+    /* transform: scale(1.05); */
+    transform:  translateY(0.7em)
   }
 
   img {
-    transition: all .1s;
+    transition: all 0.1s;
   }
   img:hover {
     transform: rotate(-10deg);
@@ -134,10 +136,10 @@ const activeLinkStyle = {
 const Header = ({ siteTitle, data }) => (
   <HeaderWrapper>
     <HeaderContainer>
-      <LogoContainer >
-          <Link to="/" >
-            <Image id="logo" style={{ maxHeight: '120px', maxWidth: '120px'}}/>
-          </Link>
+      <LogoContainer>
+        <Link to="/">
+          <Image id="logo" style={{ maxHeight: '120px', maxWidth: '120px'}} />
+        </Link>
       </LogoContainer>
 
 
