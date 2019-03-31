@@ -36,6 +36,7 @@ const Container = styled.div`
   
 
   h1 {
+    z-index: -1;
     font-size: 4.25rem;
     font-weight: 300;
   }

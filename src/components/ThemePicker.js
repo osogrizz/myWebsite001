@@ -3,6 +3,7 @@ import styled from 'styled-components'
 // import PropTypes from 'prop-types'
 
 const Wrapper = styled.div`
+    z-index: 100;
     max-width: 80px;
     margin-left: 15%;
     /* margin-bottom: 20px; */
@@ -12,6 +13,7 @@ const Wrapper = styled.div`
         margin-top: 40px;
         background-color: orange;
         visibility: hidden;
+        
     }
     &:hover {
       ul {
@@ -21,6 +23,8 @@ const Wrapper = styled.div`
     
 `
 const Btn = styled.div`
+    z-index: 200;
+    margin-bottom: 2rem;
     height: 26px;
     width: 26px;
     border-radius: 50%;
@@ -44,7 +48,7 @@ const Modal = styled.div`
   color: #444;
   line-height: 1.4;
   font-size: 35px;
-  padding: 5px 10px;
+  padding: 2px 10px;
   margin-right: 28px;  
 
 
@@ -54,11 +58,8 @@ const Modal = styled.div`
     font-weight: 800;
   }
 
-  @media (max-width: 1486px) {
-    height: 40px;
-    line-height: 0.7;
-    font-size: 12px;
-    
+  @media (max-width: 600px) {
+    margin-right: 12rem;;
   }
 `
 

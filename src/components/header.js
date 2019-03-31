@@ -7,11 +7,8 @@ import Image from './image'
 const HeaderWrapper = styled.div`
   position: relative;
   display: flex;
-  // max-width: 100vw;
-  overflow: hidden;
-  // padding: 1.45rem 0rem 1.45rem;
+  overflow: hidden;  
   background: inherit;
-  /* margin-bottom: 1.45rem; */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
@@ -22,7 +19,6 @@ const HeaderWrapper = styled.div`
       text-decoration: none;
       color: #1f2023;
       text-shadow: 0.5px 0.5px 1px #636363, -0.25px -0.25px 2px #636363;
-      // padding-left: 20px;
     }
   }
   p {
@@ -33,10 +29,9 @@ const HeaderWrapper = styled.div`
     justify-content: space-between;
     li {
       display: inline-block;
-      // margin-left: 1em;
       margin-right: 20px;
       font-size: 1.3rem;
-      padding-top: 12px;
+      padding-top: 12px;  
     }
   }
   a {
@@ -48,7 +43,7 @@ const HeaderWrapper = styled.div`
   }
 
   @media (max-width: 1486px) {
-    height: 300px;
+    height: 350px;
   }
 `;
 
@@ -150,9 +145,6 @@ const Header = ({ siteTitle, data }) => (
         </Link>
       </LogoContainer>
 
-      
-
-
       <NavContainer>
         <ul>
           <li>
@@ -178,47 +170,3 @@ const Header = ({ siteTitle, data }) => (
 
 export default Header;
 
-
-
-// import { Link } from "gatsby"
-// import PropTypes from "prop-types"
-// import React from "react"
-
-// const Header = ({ siteTitle }) => (
-//   <header
-//     style={{
-//       background: `rebeccapurple`,
-//       marginBottom: `1.45rem`,
-//     }}
-//   >
-//     <div
-//       style={{
-//         margin: `0 auto`,
-//         maxWidth: 960,
-//         padding: `1.45rem 1.0875rem`,
-//       }}
-//     >
-//       <h1 style={{ margin: 0 }}>
-//         <Link
-//           to="/"
-//           style={{
-//             color: `white`,
-//             textDecoration: `none`,
-//           }}
-//         >
-//           {siteTitle}
-//         </Link>
-//       </h1>
-//     </div>
-//   </header>
-// )
-
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
-
-// export default Header
