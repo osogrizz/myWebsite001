@@ -87,6 +87,23 @@ const Modal = styled.div`
   }
 `
 
+// let toggle = document.querySelector('.themeBody');
+
+// toggle.addEventListener('click', function(e) {
+//   e.preventDefault();
+
+//   if (document.body.classList.contains('light-them')) {
+//     // Turning the theme off:
+//     document.body.classList.remove('light-theme');
+//     // Reverse logic on the button text, so that users can turn
+//     // the theme back on:
+//     toggle.innerText = '🤡 Turn theme on';
+//   } else {
+//     document.body.classList.add('light-theme');
+//     toggle.innerText = 'Turn theme off';
+//   }
+// });
+
 
 
 const ThemePicker = () => {
@@ -95,12 +112,15 @@ const ThemePicker = () => {
       <Btn>
         <ul>
           <Modal>
-            <li>
-              <SBtn style={{ background: '#222', border: '2px solid darkorange' }} />
+            <li onClick={() => { console.log('dark theme')}}>
+              <SBtn
+              
+                style={{ background: '#222', border: '2px solid darkorange' }}
+              />
                 Dark 
             </li>
         |
-            <li>
+            <li onClick={() => { console.log('light theme')}}>
               <SBtn style={{ background: '#fff', border: '2px solid green' }} />
                 Light
             </li>

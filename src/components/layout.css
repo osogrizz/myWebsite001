@@ -7,19 +7,20 @@ body {
   margin: 0;
 }
 
-/* :root {
-  --bg: white;
+:root {
+  --bg: #323944;
+  --text-color: #6a6a6a;
+  --shadow: #4d4d4d; 
+  --link-color: #4d4d4d;
+  --link-hover: #898989;
+}
+
+.light-theme {
+  --bg: #fff;
   --text-color: #555;
   --link-color: #639A67;
   --link-hover: #205D67;
 }
-
-.dark-theme {
-  --bg: #323944;
-  --text-color: #6a6a6a;
-  --link-color: #4d4d4d;
-  --link-hover: #898989;
-} */
 
 article,
 aside,
