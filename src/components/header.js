@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-import React from 'react';
-import { Link } from 'gatsby';
-import styled from 'styled-components';
-
-import Image from './image'
-
-=======
 import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Image from './image'
->>>>>>> logov2
 
 const HeaderWrapper = styled.div`
   position: relative;
