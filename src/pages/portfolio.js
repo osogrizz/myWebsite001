@@ -87,14 +87,8 @@ const Card = styled.div`
   }
 
   h1 {
-
     margin-top: 0;
-    z-index: 12;
-    /* visibility: hidden; */
     padding: 0.8rem;
-    &:hover {
-      /* visibility: visible; */
-    }
   }
 
   p {

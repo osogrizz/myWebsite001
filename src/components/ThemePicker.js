@@ -5,18 +5,24 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
     max-width: 80px;
     margin-left: 15%;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    padding-bottom: 20px;
 
     ul {
         margin-top: 40px;
         background-color: orange;
         visibility: hidden;
     }
+    &:hover {
+      ul {
+        visibility: visible;
+      }
+    }
     
 `
 const Btn = styled.div`
-    height: 30px;
-    width: 30px;
+    height: 26px;
+    width: 26px;
     border-radius: 50%;
     border: 2px solid orange;
     outline: none;
@@ -25,6 +31,7 @@ const Btn = styled.div`
     &:hover {
         ul {
             visibility: visible;  
+            /* margin: 28px; */
         }
     }   
 `
@@ -35,37 +42,49 @@ const Modal = styled.div`
   border: 2px solid white;
   border-radius: 4px;
   color: #444;
-  transform: translateY(-20deg);
+  line-height: 1.4;
+  font-size: 35px;
+  padding: 5px 10px;
+  margin-right: 28px;  
 
-  &:hover {
-    ul {
-      visibility: visible;
-    }
-  }
 
   section {
     margin: 15px 20px;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  @media (max-width: 1486px) {
+    height: 40px;
+    line-height: 0.7;
+    font-size: 12px;
+    
   }
 `
 
+
+
 const ThemePicker = () => {
-  return (
+  return (    
     <Wrapper>
       <Btn>
         <ul>
           <Modal>
             <section>
-              <option>Dark </option>
+              <option>
+                Dark 
+              </option>
             </section>
+        |
             <section>
-              <option> Light</option>
+              <option>
+                Light
+              </option>
             </section>
           </Modal>
         </ul>
       </Btn>
-    </Wrapper>
+    </Wrapper> 
   )
 }
 
@@ -74,4 +93,3 @@ const ThemePicker = () => {
 // }
 
 export default ThemePicker
-
