@@ -48,6 +48,10 @@ const SBtn = styled.div`
     border: 2px solid orange;
     outline: none;
     background: #222;
+
+    @media (max-width: 600px) {
+      
+  }
 `
 
 const Modal = styled.div`
@@ -66,12 +70,20 @@ const Modal = styled.div`
     display: flex !important;
     margin: 10px 20px;
     font-size: 16px !important;
-    /* font-weight: 800; */
     line-height: 0.5;
   }
 
   @media (max-width: 600px) {
-    margin-right: 12rem;;
+    margin-right: 12rem;
+    font-size: 40px;
+    /* line-height: 0.8; */
+     
+    li {
+      line-height: 0.5;
+      margin: 0 5px;
+      margin-top: -16px;
+      font-size: 12px;
+    }
   }
 `
 
