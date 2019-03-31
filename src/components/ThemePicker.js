@@ -40,22 +40,34 @@ const Btn = styled.div`
     }   
 `
 
+const SBtn = styled.div`
+    margin: -6px 12px 0 0;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    outline: none;
+    background: #222;
+`
+
 const Modal = styled.div`
   display: flex;
   background-color: orange;
   border: 2px solid white;
   border-radius: 4px;
   color: #444;
-  line-height: 1.4;
+  line-height: 1.2;
   font-size: 35px;
-  padding: 2px 10px;
+  padding: 2px 10px 8px;
   margin-right: 28px;  
 
 
-  section {
-    margin: 15px 20px;
-    font-size: 18px;
-    font-weight: 800;
+  li {
+    display: flex !important;
+    margin: 10px 20px;
+    font-size: 16px !important;
+    /* font-weight: 800; */
+    line-height: 0.5;
   }
 
   @media (max-width: 600px) {
@@ -71,17 +83,15 @@ const ThemePicker = () => {
       <Btn>
         <ul>
           <Modal>
-            <section>
-              <option>
+            <li>
+              <SBtn style={{ background: '#222', border: '2px solid darkorange' }} />
                 Dark 
-              </option>
-            </section>
+            </li>
         |
-            <section>
-              <option>
+            <li>
+              <SBtn style={{ background: '#fff', border: '2px solid green' }} />
                 Light
-              </option>
-            </section>
+            </li>
           </Modal>
         </ul>
       </Btn>
