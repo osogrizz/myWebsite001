@@ -101,13 +101,11 @@ const LogoContainer = styled.div`
   }
 
   @media (max-width: 1565px) {
-    // max-width: 60vw;
+    margin-bottom: 40px;
   }
   @media  (max-width: 1486px) {
-    // margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-    // text-align: center;
   }
 `;
 
@@ -129,11 +127,11 @@ const NavContainer = styled.div`
   @media (max-width: 500px) {
     ul {
       li {
+        padding-top: 40px;
         margin-right: 7px;
         font-size: 18px;
       }
     }
-    margin-top: 40px;
   }
 `;
 
