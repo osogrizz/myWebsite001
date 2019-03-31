@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
 import Image from './image'
 
+=======
+import React from 'react'
+import { Link } from 'gatsby'
+import styled from 'styled-components'
+import Image from './image'
+>>>>>>> logov2
 
 const HeaderWrapper = styled.div`
   position: relative;
@@ -47,6 +54,10 @@ const HeaderWrapper = styled.div`
       transition: all 230ms ease;
     }
   }
+
+  @media (max-width: 1486px) {
+    height: 300px;
+  }
 `;
 
 const HeaderContainer = styled.div`
@@ -81,6 +92,9 @@ const LogoContainer = styled.div`
   text-decoration: none;
   padding-left: 0;
   transition: all .1s;
+  padding: 3px;
+  border: 3px solid orange;
+  border-radius: 50%;
 
   &:hover {
     transition: 0.1s cubic-bezier(0, 1.8, 1, 1.8);
@@ -95,13 +109,11 @@ const LogoContainer = styled.div`
   }
 
   @media (max-width: 1565px) {
-    // max-width: 60vw;
+    margin-bottom: 40px;
   }
   @media  (max-width: 1486px) {
-    // margin: 0 auto;
     padding-left: 0;
     padding-right: 0;
-    // text-align: center;
   }
 `;
 
@@ -118,13 +130,22 @@ const NavContainer = styled.div`
       transition: all 230ms ease;
       border-bottom: 3px solid cornflowerblue;
     }
-   
+  }
+
+  @media (max-width: 500px) {
+    ul {
+      li {
+        padding-top: 40px;
+        margin-right: 7px;
+        font-size: 18px;
+      }
+    }
   }
 `;
 
 const activeLinkStyle = {
   borderBottom: '1px solid cornflowerblue',
-  fontWeight: 490,
+  fontWeight: 500,
 }
 
 
@@ -137,7 +158,7 @@ const Header = ({ siteTitle, data }) => (
         </Link>
       </LogoContainer>
 
-      {/* ThemePicker */}
+      
 
 
       <NavContainer>
@@ -162,47 +183,3 @@ const Header = ({ siteTitle, data }) => (
 
 export default Header;
 
-
-
-// import { Link } from "gatsby"
-// import PropTypes from "prop-types"
-// import React from "react"
-
-// const Header = ({ siteTitle }) => (
-//   <header
-//     style={{
-//       background: `rebeccapurple`,
-//       marginBottom: `1.45rem`,
-//     }}
-//   >
-//     <div
-//       style={{
-//         margin: `0 auto`,
-//         maxWidth: 960,
-//         padding: `1.45rem 1.0875rem`,
-//       }}
-//     >
-//       <h1 style={{ margin: 0 }}>
-//         <Link
-//           to="/"
-//           style={{
-//             color: `white`,
-//             textDecoration: `none`,
-//           }}
-//         >
-//           {siteTitle}
-//         </Link>
-//       </h1>
-//     </div>
-//   </header>
-// )
-
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
-
-// export default Header
