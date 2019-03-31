@@ -6,6 +6,7 @@ const Wrapper = styled.div`
     max-width: 80px;
     margin-left: 15%;
     margin-bottom: 20px;
+    position: relative;
 
     ul {
         margin-top: 40px;
@@ -13,6 +14,11 @@ const Wrapper = styled.div`
         visibility: hidden;
     }
     
+    &:hover {
+        ul {
+            visibility: visible;  
+        }
+    }   
 `
 const Btn = styled.div`
     height: 30px;
@@ -21,32 +27,43 @@ const Btn = styled.div`
     border: 2px solid orange;
     outline: none;
     background: #222;
-
-    &:hover {
-        ul {
-            visibility: visible;  
-        }
-    }   
 `
 
+const SmallBtn = styled.div`
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    outline: none;
+    background: #444;
+`
+ 
 const Modal = styled.div`
   display: flex;
   background-color: orange;
   border: 2px solid white;
   border-radius: 4px;
   color: #444;
-  transform: translateY(-20deg);
+
+  span {
+    line-height: 1.6;
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  
 
   &:hover {
-    ul {
       visibility: visible;
-    }
+    
   }
 
   section {
     margin: 15px 20px;
-    font-size: 20px;
-    font-weight: 700;
+
+    option {
+      /* font-weight: 600; */
+      font-size: 14px;
+    }
   }
 `
 
@@ -56,12 +73,19 @@ const ThemePicker = () => {
       <Btn>
         <ul>
           <Modal>
+
             <section>
-              <option>Dark </option>
+              <SmallBtn style={{  border: '2px solid #ffe8cc'}} />
+              <option>Dark</option>
             </section>
+
+            <span>|</span>
+
             <section>
-              <option> Light</option>
+              <SmallBtn style={{ background: '#ffe8cc', border: '2px solid olive'}} />
+              <option>Light</option>
             </section>
+
           </Modal>
         </ul>
       </Btn>
