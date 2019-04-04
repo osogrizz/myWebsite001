@@ -36,6 +36,7 @@ const Container = styled.div`
   
 
   h1 {
+    z-index: -1;
     font-size: 4.25rem;
     font-weight: 300;
   }
@@ -87,14 +88,8 @@ const Card = styled.div`
   }
 
   h1 {
-
     margin-top: 0;
-    z-index: 12;
-    /* visibility: hidden; */
     padding: 0.8rem;
-    &:hover {
-      /* visibility: visible; */
-    }
   }
 
   p {

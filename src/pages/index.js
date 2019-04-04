@@ -5,11 +5,12 @@ import styled from 'styled-components'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import TypedText from '../components/typed'
+import "../components/layout.css"
 
 const Wrapper = styled.div`
-  background: #323944;
+  background: var(--bg);
   width: 100%;
-  color: #6a6a6a;
+  color: var(--text-color);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `
@@ -55,7 +56,7 @@ const Container = styled.div`
 `
 
 const IndexPage = () => (
-  <Wrapper>  
+  <Wrapper className="themeBody">  
     <Layout>
       <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
       <Container>
