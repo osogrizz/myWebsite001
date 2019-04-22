@@ -63,8 +63,9 @@ const IndexPage = () => (
         <h1>
           <TypedText />
         </h1>
-        <h2>Websites, Blogs, E-Commerce</h2>
-        <p>Custom sites for what you need.</p>
+        <p>
+          Lorem ipsum dolor amet chambray locavore asymmetrical godard man bun, pork belly butcher tumeric disrupt +1 iPhone health goth aesthetic. Pop-up echo park tofu next level, vice shabby chic trust fund kickstarter pitchfork. Jean shorts beard lyft copper mug hoodie chambray bespoke actually post-ironic literally crucifix austin paleo stumptown cronut. VHS blue bottle microdosing art party wayfarers shoreditch lo-fi +1 williamsburg authentic hoodie. Edison bulb hashtag 8-bit master cleanse yr williamsburg shoreditch. XOXO freegan enamel pin kombucha artisan before they sold out.
+        </p>
       </Container>
     </Layout>
   </Wrapper>
