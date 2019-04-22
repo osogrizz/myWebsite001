@@ -35,9 +35,11 @@ const Container = styled.div`
     font-weight: 300;
   }
   p {
+    margin-top: 4rem;
     font-size: 1.8rem;
     color: #fff;
     font-weight: 200;
+    line-height: 3rem;
   }
   a {
     color: #fff; 
