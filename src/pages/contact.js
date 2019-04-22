@@ -55,31 +55,37 @@ const FormWrapper = styled.div`
 const FormContainer = styled.div`
   margin: 0 auto;
   display: grid;
-  max-width: 700px;
+  max-width: 600px;
   grid-template-columns: 1fr;
   text-align: center;
   align-content: center;
-  
 `
 
 const InputStyles = styled.input`
   height: 50px;
   margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
 `
 
 const Btn = styled.button`
     margin: 50px auto;
     border-radius: 4px;
-    font-weight: 600;
+    border: 3px solid #6a6a6a !important;
+    font-weight: 400;
     font-size: 16px;
     line-height: 45px;
     text-transform: uppercase;
-    border: red;
-    box-shadow: 2px 2px 4px #4d4d4d;
+    letter-spacing: 4px;
+    /* border: red; */
+    /* box-shadow: 2px 2px 4px #4d4d4d; */
     outline: none;
     width: 180px;
-    background: red;
-    color: #fff;
+    /* background: red; */
+    background: inherit;
+    /* color: #fff; */
+    color: #6a6a6a;
     position: relative;
     overflow: hidden;
     z-index: 20;
@@ -88,8 +94,10 @@ const Btn = styled.button`
       z-index: 20;
     }
     &:active {
-      background-color: #e01111;
-      color: #fff;
+      /* background-color: #e01111; */
+      background-color: #6a6a6a;
+      /* color: #fff; */
+      color: #323944;
       background-size: 100%;
       transition: background 0s;
     }
@@ -118,44 +126,11 @@ const Btn = styled.button`
 `
 
 const TextArea = styled.textarea`
-  margin-top: 10px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
 `
-
-// const ContactMe = styled.div`
-//   h1 {
-//     /* color: #6a6a6a !important; */
-//     color: #fff !important;
-//     position: relative;
-//     font-size: 70px;
-//     font-weight: 300;
-//     /* z-index: -1; */ 
-//     text-align: center;
-//     margin-top: 60px;
-//     margin-bottom: 80px;
-//     overflow: hidden;
-//   }
-//   h1:before, h1:after {
-//     position: absolute;
-//     top: 50%;
-//     overflow: hidden;
-//     width: 51%;
-//     height: 1px;
-//     content: '\a0';
-//     /* background-color: #444; */
-//     background-color: #fff;
-// }
-// h1:before {
-//     margin-left: -50%;
-//     text-align: right;
-// }
-
-// span {
-//   /* color: #6a6a6a !important; */
-//   color: #fff;
-//   /* font-family: 'Sacramento', cursive; */
-//   margin: 0 20px;
-// }
-// ` 
 
 const Contact = () => (
   <PageWrapper>
@@ -174,7 +149,7 @@ const Contact = () => (
 
             <InputStyles type="email" name="email" placeholder="Email" required />
 
-            <TextArea name="message" id="" cols="30" rows="6" placeholder="Message" required />
+            <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
             <Btn type="submit"><span>Send</span></Btn>
           </FormContainer>  
         </form>
@@ -193,6 +168,10 @@ const Contact = () => (
         </p>
                         
       </FormWrapper>   
+
+      <div>
+        <a href="" />
+      </div>
     </Layout>
   </PageWrapper> 
 )
