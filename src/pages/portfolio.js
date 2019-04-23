@@ -49,7 +49,6 @@ const Container = styled.div`
     text-decoration: none;
     &:hover {
       color: #898989;
-      border-bottom: 2px solid;
     }
   }
   @media screen and (max-width: 475px) {
