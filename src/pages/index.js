@@ -35,11 +35,14 @@ const Container = styled.div`
     font-weight: 300;
   }
   p {
+    margin: 0 auto;
+    max-width: 800px;
     margin-top: 4rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     color: #fff;
     font-weight: 200;
-    line-height: 3rem;
+    line-height: 2.7rem;
+    letter-spacing: 3px;;
   }
   a {
     color: #fff; 
@@ -66,7 +69,7 @@ const IndexPage = () => (
           <TypedText />
         </h1>
         <p>
-          Lorem ipsum dolor amet chambray locavore asymmetrical godard man bun, pork belly butcher tumeric disrupt +1 iPhone health goth aesthetic. Pop-up echo park tofu next level, vice shabby chic trust fund kickstarter pitchfork. Jean shorts beard lyft copper mug hoodie chambray bespoke actually post-ironic literally crucifix austin paleo stumptown cronut. VHS blue bottle microdosing art party wayfarers shoreditch lo-fi +1 williamsburg authentic hoodie. Edison bulb hashtag 8-bit master cleanse yr williamsburg shoreditch. XOXO freegan enamel pin kombucha artisan before they sold out.
+          Hi, I'm a web developer from El Paso, TX. currently based in sunny California. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.
         </p>
       </Container>
     </Layout>

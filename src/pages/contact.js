@@ -81,7 +81,7 @@ const Btn = styled.button`
     letter-spacing: 4px;
     outline: none;
     width: 180px;
-    background: inherit;
+    background: #2d333d;
     color: #6a6a6a;
     position: relative;
     overflow: hidden;

@@ -108,7 +108,7 @@ const NavContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     li {
-
+      letter-spacing: 2px;
     }
   }
   a {
@@ -122,7 +122,7 @@ const NavContainer = styled.div`
     ul {
       li {
         padding-top: 40px;
-        margin-right: 7px;
+        margin-right: 10px;
         font-size: 18px;
       }
     }

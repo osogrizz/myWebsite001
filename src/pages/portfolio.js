@@ -1,12 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
-import PropTypes from "prop-types"
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo'
-import Header from '../components/header';
 
 const Wrapper = styled.div`
   -webkit-transform: translate3d(0,0,0);
@@ -21,7 +20,6 @@ const Wrapper = styled.div`
     overflow: hidden;
   }
 `
-
 const Container = styled.div`
   text-align: center;
   z-index: 2;
@@ -29,13 +27,11 @@ const Container = styled.div`
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
   margin-top: 1.45rem;
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   max-width: 960px;
   min-height: 80vh;
   /* color: #4d4d4d; */
   color: #6a6a6a;
-  
-
   h1 {
     z-index: -1;
     font-size: 4.25rem;
@@ -44,24 +40,14 @@ const Container = styled.div`
   p {
     font-size: 1.3rem;
   }
-  a {
-    font-size: 1.2rem;
-    color: #4d4d4d;
-    text-decoration: none;
-    &:hover {
-      color: #898989;
-    }
-  }
   @media screen and (max-width: 475px) {
     display: block;
   }
-
 `
 
 const CardContainer = styled.div`
   display: flex;;
   justify-content: space-around;
-  /* padding: 1.45rem 1.0875rem 1.45rem; */
 
   @media screen and (max-width: 475px) {
     display: block;
@@ -69,8 +55,21 @@ const CardContainer = styled.div`
   }
   @media screen and (min-width: 476px) and (max-width: 1315px) {
     display: block;
+    justify-content: space-around;
     padding: 0;
   }
+`
+const LinkContainer = styled.div`
+  text-align: center;
+  margin-bottom: 200px;
+a {
+  font-size: 1.2rem;
+  color: #4d4d4d;
+  text-decoration: none;
+  &:hover {
+    color: #898989;
+  }
+}
 `
 
 const Card = styled.div`
@@ -93,7 +92,6 @@ const Card = styled.div`
   }
 
   p {
-
     z-index: 99;
     padding: 0.8rem;
     font-size: 18px;
@@ -145,6 +143,13 @@ const Portfolio = ({ data }) => (
                 />
               </a>
             </Card> */}
+            <Card>
+              <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  fluid={data.taco.fluid}
+                />
+              </a>
+            </Card>
 
             <Card>
               <a href="https://cocky-kowalevski-a61a98.netlify.com/" target="_blank" rel="noopener noreferrer">
@@ -174,19 +179,13 @@ const Portfolio = ({ data }) => (
               </a>
             </Card>
 
-            <Card>
-              <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  fluid={data.taco.fluid}
-                />
-              </a>
-            </Card>
-
           </CardContainer>
-
-          <Link to="/">Go back to the homepage</Link>
-
         </Container>
+
+        <LinkContainer>
+          <Link to="/">Go back to the homepage</Link>
+        </LinkContainer>
+
       </Layout>
     </Wrapper>
   </>
