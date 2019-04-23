@@ -24,6 +24,7 @@ const FormWrapper = styled.div`
   text-align: center;
   max-width: 1050px !important;
   padding-bottom: 60px;
+  
 
   h5 {
     font-weight: 150;
@@ -78,49 +79,37 @@ const Btn = styled.button`
     line-height: 45px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    /* border: red; */
-    /* box-shadow: 2px 2px 4px #4d4d4d; */
     outline: none;
     width: 180px;
-    /* background: red; */
     background: inherit;
-    /* color: #fff; */
     color: #6a6a6a;
     position: relative;
     overflow: hidden;
-    z-index: 20;
+    transition: all 0.18s ease-in-out;
 
-    span {
-      z-index: 20;
-    }
     &:active {
-      /* background-color: #e01111; */
-      background-color: #6a6a6a;
-      /* color: #fff; */
-      color: #323944;
-      background-size: 100%;
-      transition: background 0s;
-    }
-
-    &:after {
-      background: #fff;
-      content: "";
-      height: 155px;
-      left: -75px;
-      opacity: 0.2;
-      position: absolute;
-      top: -50px;
-      transform: rotate(35deg);
-      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-      width: 50px;
-      z-index: -10;
+      background-color: red !important;
+      border: 3px solid red !important;
+      transition: all 0.2s ease-out !important;
     }
   
   &:hover {
+    cursor: pointer;
+    color: #323944;
+    background-color: #6a6a6a;
+    letter-spacing: 1.2rem;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 25px;
+    transition: all 0.25s ease-in-out;
     &:after {
+
+    }
+
+    /* &:after {
       left: 120%;
       transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    }
+    } */
   }
 
 `
@@ -130,6 +119,13 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 3px;
   padding: 10px;
+`
+
+const ResumePDF = styled.div`
+a {
+  color: white;
+  text-decoration: none;
+}
 `
 
 const Contact = () => (
@@ -151,6 +147,10 @@ const Contact = () => (
 
             <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
             <Btn type="submit"><span>Send</span></Btn>
+
+            <ResumePDF>
+              <a href="src/assets/resume.pdf" download="leo-torres-weDeveloper.pdf">Resume</a>
+            </ResumePDF>
           </FormContainer>  
         </form>
 
@@ -169,9 +169,7 @@ const Contact = () => (
                         
       </FormWrapper>   
 
-      <div>
-        <a href="" />
-      </div>
+
     </Layout>
   </PageWrapper> 
 )
