@@ -135,7 +135,7 @@ const activeLinkStyle = {
 }
 
 
-const Header = ({ siteTitle, data }) => (
+const Header = () => (
   <HeaderWrapper>
     <HeaderContainer>
       <LogoContainer>
@@ -162,4 +162,3 @@ const Header = ({ siteTitle, data }) => (
 );
 
 export default Header;
-

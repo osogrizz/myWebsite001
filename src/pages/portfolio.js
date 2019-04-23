@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo'
+import Header from '../components/header';
 
 const Wrapper = styled.div`
   -webkit-transform: translate3d(0,0,0);
@@ -136,14 +137,14 @@ const Portfolio = ({ data }) => (
               </a>
             </Card>
 
-            <Card>
+            {/* <Card>
               <a href="https://pizza-f23b6.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
                 <Img
                   style={{ height: '100%' }}
                   fluid={data.pizza.fluid}
                 />
               </a>
-            </Card>
+            </Card> */}
 
             <Card>
               <a href="https://cocky-kowalevski-a61a98.netlify.com/" target="_blank" rel="noopener noreferrer">
@@ -191,6 +192,7 @@ const Portfolio = ({ data }) => (
   </>
 );
 
+
 export default Portfolio;
 
 export const query = graphql`
@@ -205,11 +207,11 @@ export const query = graphql`
       ...GatsbyImageSharpFluid
       }
     }
-    pizza: imageSharp(fluid: {originalName: {eq: "pizza.png" } } ) {
-      fluid(maxWidth: 400) {
-      ...GatsbyImageSharpFluid
-      }
-    }
+    # pizza: imageSharp(fluid: {originalName: {eq: "pizza.png" } } ) {
+    #   fluid(maxWidth: 400) {
+    #   ...GatsbyImageSharpFluid
+    #   }
+    # }
     calc: imageSharp(fluid: {originalName: {eq: "calculator.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
@@ -232,7 +234,3 @@ export const query = graphql`
     }
   }
 `;
-
-Portfolio.propTypes = {
-  data: PropTypes.node.isRequired,
-}
