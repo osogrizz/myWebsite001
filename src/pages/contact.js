@@ -121,12 +121,12 @@ const TextArea = styled.textarea`
   padding: 10px;
 `
 
-const ResumePDF = styled.div`
-a {
-  color: white;
-  text-decoration: none;
-}
-`
+// const ResumePDF = styled.div`
+// a {
+//   color: white;
+//   text-decoration: none;
+// }
+// `
 
 const Contact = () => (
   <PageWrapper>
@@ -148,9 +148,9 @@ const Contact = () => (
             <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
             <Btn type="submit"><span>Send</span></Btn>
 
-            <ResumePDF>
+            {/* <ResumePDF>
               <a href="src/assets/resume.pdf" download="leo-torres-weDeveloper.pdf">Resume</a>
-            </ResumePDF>
+            </ResumePDF> */}
           </FormContainer>  
         </form>
 
