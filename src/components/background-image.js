@@ -5,7 +5,8 @@ import styled from 'styled-components'
 import BackgroundImage from 'gatsby-background-image'
 
 const BackgroundSection = ({ className }) => (
-    <StaticQuery query={graphql`
+  <StaticQuery
+    query={graphql`
       query {
         desktop: file(relativePath: { eq: "homeBG.jpg" }) {
           childImageSharp {
@@ -16,21 +17,22 @@ const BackgroundSection = ({ className }) => (
         }
       }
     `}
-     render={data => {
+    render={data => {
        // Set ImageData.
        const imageData = data.desktop.childImageSharp.fluid
        return (
-          <BackgroundImage Tag="section"
-                           className={className}
-                           fluid={imageData}
-                           backgroundColor={`#040e18`}
-          >
-            <h1>Hello gatsby-background-image</h1>
-          </BackgroundImage>
+         <BackgroundImage
+           Tag="section"
+           className={className}
+           fluid={imageData}
+           backgroundColor="#040e18"
+         >
+           <h1>Hello gatsby-background-image</h1>
+         </BackgroundImage>
        )
      }
      }
-    />
+  />
 )
 
 const StyledBackgroundSection = styled(BackgroundSection)`
