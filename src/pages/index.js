@@ -72,7 +72,7 @@ const IndexPage = () => (
           <TypedText />
         </h1>
         <p>
-          Hi, I'm a web developer from El Paso, TX. currently based in sunny California. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me 
+          Hi, I'm a web developer from El Paso, Texas, currently based in sunny California. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me 
           {' '}
           <span><Link to="/contact">here.</Link></span>
         </p>
