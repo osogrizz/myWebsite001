@@ -92,7 +92,7 @@ const Btn = styled.button`
     &:active {
       background-color: red !important;
       border: 3px solid red !important;
-      transition: all 0.2s ease-out !important;
+      transition: all 0.00001s ease-out !important;
     }
   
   &:hover {
