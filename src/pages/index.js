@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -45,10 +46,12 @@ const Container = styled.div`
     letter-spacing: 3px;;
   }
   a {
-    color: #fff; 
+    text-decoration: none;
+    color: #fff;
     &:hover {
-      color: #1f2023;
-      border-bottom: 2px solid;
+      /* color: #6a6a6a; */
+      text-shadow: 0px 0px 0px;
+      color: lightcoral;
     }
   }
 
@@ -69,7 +72,9 @@ const IndexPage = () => (
           <TypedText />
         </h1>
         <p>
-          Hi, I'm a web developer from El Paso, TX. currently based in sunny California. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me here.
+          Hi, I'm a web developer from El Paso, TX. currently based in sunny California. If you are a business seeking a web presence or an employer looking to hire, you can get in touch with me 
+          {' '}
+          <span><Link to="/contact">here.</Link></span>
         </p>
       </Container>
     </Layout>

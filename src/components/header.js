@@ -35,6 +35,7 @@ const HeaderWrapper = styled.div`
   }
   a {
     color: #FF7C00;
+    /* color: lightcoral; */
     text-decoration: none;
     &:hover {
       transition: all 230ms ease;

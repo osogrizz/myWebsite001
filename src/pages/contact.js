@@ -24,15 +24,16 @@ const FormWrapper = styled.div`
   text-align: center;
   max-width: 1050px !important;
   padding-bottom: 60px;
-  
 
   h5 {
     font-weight: 150;
     font-size: .9rem;
     letter-spacing: 0.8px;
+    /* color: rgb(243, 235, 222); */
   }
 
   h4 {
+    /* color: rgb(243, 235, 222); */
     font-size: 15px;
     font-weight: 200;
     letter-spacing: 1.5px;
@@ -45,6 +46,7 @@ const FormWrapper = styled.div`
     a {
       text-decoration: none;
       color: #777;
+      /* color: #fff; */
       &:hover {
         color: rgb(243, 235, 222)
       }
