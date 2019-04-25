@@ -1,8 +1,8 @@
 /* eslint-disable no-irregular-whitespace */
 import React from 'react'
 import styled from 'styled-components'
+import { PDFDownloadLink, Page, Text, Document, StyleSheet, Font } from '@react-pdf/renderer'
 
-// import jsPDF from 'jspdf';
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -118,110 +118,137 @@ const TextArea = styled.textarea`
   padding: 10px;
 `
 
-// const ResumePDF = styled.div`
-// a {
-//   color: white;
-//   text-decoration: none;
-// }
-// `
+const styles = StyleSheet.create({
+  body: {
+    paddingTop: 35,
+    paddingBottom: 65,
+    paddingHorizontal: 35,
+  },
+  title: {
+    fontSize: 24,
+    textAlign: 'center',
+    fontFamily: 'Oswald'
+  },
+  author: {
+    fontSize: 12,
+    textAlign: 'center',
+    marginBottom: 40,
+  },
+  subtitle: {
+    fontSize: 18,
+    margin: 12,
+    fontFamily: 'Oswald'
+  },
+  text: {
+    margin: 8,
+    fontSize: 11,
+    textAlign: 'justify',
+    fontFamily: 'Times-Roman'
+  },
+  image: {
+    marginVertical: 15,
+    marginHorizontal: 100,
+  },
+  header: {
+    fontSize: 12,
+    marginBottom: 20,
+    textAlign: 'center',
+    color: 'grey',
+  },
+  pageNumber: {
+    position: 'absolute',
+    fontSize: 12,
+    bottom: 30,
+    left: 0,
+    right: 0,
+    textAlign: 'center',
+    color: 'grey',
+  },
+});
 
-// var doc = new jsPDF('p', 'in', 'letter'),
-//   sizes = [11],
-//   fonts = [['Times', 'Roman']],
-//   font, size, lines,
-//   margin = 0.5, // inches on a 8.5 x 11 inch sheet.
-//   verticalOffset = margin,
-//   loremipsum = `Leo TorresWeb Developer(415) 948-4792 | lhtorres@yahoo.com|
-  
-//   LinkedIn –https://linkedin.com/in/leohtorres| GitHub -https://github.com/osogrizz| 
-//   FreeCodeCamp -https://www.freecodecamp.org/osogrizz
-  
-//   Core Skills
-//   JavaScript•React•jQuery• HTML5•CSS3•Gatsby• Git:[GitHub,GitLab]•GraphQL
+Font.register(
+  'https://fonts.gstatic.com/s/oswald/v13/Y_TKV6o8WovbUd3m_X9aAA.ttf',
+  { family: 'Oswald' },
+);
 
-//   Projects
+const MyPDF = () => (
+  <Document>
+    <Page style={styles.body}>
 
-//   Personal website –https://leo-torres.tech/
-//   Markdown Preview –https://markdown-preview.netlify.com/
-//   Wikipedia Finder –http://codepen.io/osogrizz/full/VPrKoP/
-  
+      <Text style={styles.subtitle}>
+          Leo TorresWeb Developer (415) 948-4792 | lhtorres@yahoo.com| 
+      </Text>
+      
+      <Text style={styles.text}>
+          LinkedIn –https://linkedin.com/in/leohtorres | GitHub -https://github.com/osogrizz |
+          FreeCodeCamp -https://www.freecodecamp.org/osogrizz
+      </Text>
+          
+      <Text style={styles.text}>
+          Core Skills
+      </Text>
+      
+      <Text style={styles.text}>
+          JavaScript • React • jQuery • HTML5 • CSS3 • Gatsby • Git:[GitHub,GitLab] • GraphQL
+      </Text>
 
-//   Experience
+      <Text style={styles.text}>
+          Projects
 
-//   GatsbyOpen Source Developer|Feb. 2019-Present
-//   •Contributed a Gatsby starter,to the Gatsbystarter library. 
-  
-//   Valor NetworkMetuchen, NJ 
-//   Developer|Aug.2017 –Mar.2018
+          Personal website –https://leo-torres.tech/
+          Markdown Preview –https://markdown-preview.netlify.com/
+          Wikipedia Finder –http://codepen.io/osogrizz/full/VPrKoP/
+          
 
-//   •Maintained codebase for modified PACS system and related Chrome extension.
-//   •Server (Linux/Windows) maintenance and setup.
-//   •Worked with existing Database performing SQL queries and HL7 request. 
-//   - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab, HL7, Linux(RedHat), Windows Server,SQL, Twilio 
+          Experience
 
-  
-//   Developer Intern| May 2017 –Aug. 2017
+          GatsbyOpen Source Developer|Feb. 2019-Present
+          •Contributed a Gatsby starter,to the Gatsbystarter library. 
+          
+          Valor NetworkMetuchen, NJ 
+          Developer|Aug.2017 –Mar.2018
 
-//   •Assisted in developing a Chrome extension that provided a UI interface and additional             functionality for users of an existing PACS system.Contributed heavily to the Front-End           implementation of the Chrome extension. 
-//   - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab
+          •Maintained codebase for modified PACS system and related Chrome extension.
+          •Server (Linux/Windows) maintenance and setup.
+          •Worked with existing Database performing SQL queries and HL7 request. 
+          - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab, HL7, Linux(RedHat), Windows Server,SQL, Twilio 
 
-//   Hawkins Personnel (Pearson)San Antonio, TXTechnicalSupport |2016–2017
-  
-//   •First point of contact for Pearson’s clients via phone.
-//   •Assisted clientsin the creation and configuration of their Pearson products / assessments
-//   •Documented all troubleshooting procedures,  resolutions, or escalations.
+          
+          Developer Intern| May 2017 –Aug. 2017
 
-//   U.S. Air ForceEngineerUtilities Engineer| May2003 –May 2009
-  
-//   •Operation and maintenance of Reverse Osmosis Water Purification Units, providing potable water    for key units and assets.
-//   •Supervision of daily work crews.
-//   •Managed vehicle fleets, and records.
-//   •Served as a translator on an as needed basis for German to English translations.
-  
-//   Education
-  
-//   General  Assembly, ImmersiveFull Stack Developer Course 
-//   Tech covered: JavaScript, HTML5, CSS3, Ruby on Rails, SQL databases, Node.jsBA Integral Studies, 
-  
-//   California Institute of Integral StudiesGoogle  
-  
-//   Challenge Udacity Front End Development Nanodegree awardee`
+          •Assisted in developing a Chrome extension that provided a UI interface and additional             functionality for users of an existing PACS system.Contributed heavily to the Front-End           implementation of the Chrome extension. 
+          - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab
 
-// // Margins:
-// doc.setDrawColor(255, 255, 255)
-// 	.setLineWidth(1 / 88)
-// 	.line(margin, margin, margin, 11 - margin)
-// 	.line(8.5 - margin, margin, 8.5 - margin, 11 - margin)
+          Hawkins Personnel (Pearson)San Antonio, TXTechnicalSupport |2016–2017
+          
+          •First point of contact for Pearson’s clients via phone.
+          •Assisted clientsin the creation and configuration of their Pearson products / assessments
+          •Documented all troubleshooting procedures,  resolutions, or escalations.
 
-// // the 3 blocks of text
-// for (var i in fonts) {
-//   if (fonts.hasOwnProperty(i)) {
-//     font = fonts[i]
-//     size = sizes[i]
+          U.S. Air ForceEngineerUtilities Engineer| May2003 –May 2009
+          
+          •Operation and maintenance of Reverse Osmosis Water Purification Units, providing potable water    for key units and assets.
+          •Supervision of daily work crews.
+          •Managed vehicle fleets, and records.
+          •Served as a translator on an as needed basis for German to English translations.
+          
+          Education
+          
+          General  Assembly, ImmersiveFull Stack Developer Course 
+          Tech covered: JavaScript, HTML5, CSS3, Ruby on Rails, SQL databases, Node.jsBA Integral Studies, 
+          
+          California Institute of Integral StudiesGoogle  
+          
+          Challenge Udacity Front End Development Nanodegree awardee
+      </Text>
 
-//     lines = doc.setFont(font[0], font[1])
-// 					.setFontSize(size)
-// 					.splitTextToSize(loremipsum, 7.5)
-// 		// Don't want to preset font, size to calculate the lines?
-// 		// .splitTextToSize(text, maxsize, options)
-// 		// allows you to pass an object with any of the following:
-// 		// {
-// 		// 	'fontSize': 12
-// 		// 	, 'fontStyle': 'Italic'
-// 		// 	, 'fontName': 'Times'
-// 		// }
-// 		// Without these, .splitTextToSize will use current / default
-// 		// font Family, Style, Size.
-//     doc.text(0.5, verticalOffset + size / 72, lines)
+    </Page>
+  </Document>
+)
 
-//     verticalOffset += (lines.length + 0.5) * size / 72
-//   }
-// }
 
-// let handlePDF = (e) => {
-//   e.preventDefault
-//   doc.save('a4.pdf')
-// }
+
+
 
 
 
@@ -245,17 +272,10 @@ const Contact = () => (
             <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
             <Btn type="submit"><span>Send</span></Btn>
 
-            {/* <ResumePDF>
-              <button 
-                type="button" 
-                onClick={handlePDF} 
-                style={{ color: 'white', background: 'inherit', border: 'none', cursor: 'pointer'}}
-              >
-                PDF 
-                {' '}
-                <span role="img" aria-label="document">📄</span> 
-              </button>
-            </ResumePDF> */}
+            <PDFDownloadLink document={<MyPDF />} fileName="Leo-Torres-Resume.pdf" style={{ color: 'white', textDecoration: 'none' }}>
+              {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Resume 📄')}
+            </PDFDownloadLink>
+
 
           </FormContainer>  
         </form>
