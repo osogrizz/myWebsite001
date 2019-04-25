@@ -2,7 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import jsPDF from 'jspdf';
+// import jsPDF from 'jspdf';
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -118,110 +118,110 @@ const TextArea = styled.textarea`
   padding: 10px;
 `
 
-const ResumePDF = styled.div`
-a {
-  color: white;
-  text-decoration: none;
-}
-`
+// const ResumePDF = styled.div`
+// a {
+//   color: white;
+//   text-decoration: none;
+// }
+// `
 
-var doc = new jsPDF('p', 'in', 'letter'),
-  sizes = [11],
-  fonts = [['Times', 'Roman']],
-  font, size, lines,
-  margin = 0.5, // inches on a 8.5 x 11 inch sheet.
-  verticalOffset = margin,
-  loremipsum = `Leo TorresWeb Developer(415) 948-4792 | lhtorres@yahoo.com|
+// var doc = new jsPDF('p', 'in', 'letter'),
+//   sizes = [11],
+//   fonts = [['Times', 'Roman']],
+//   font, size, lines,
+//   margin = 0.5, // inches on a 8.5 x 11 inch sheet.
+//   verticalOffset = margin,
+//   loremipsum = `Leo TorresWeb Developer(415) 948-4792 | lhtorres@yahoo.com|
   
-  LinkedIn –https://linkedin.com/in/leohtorres| GitHub -https://github.com/osogrizz| 
-  FreeCodeCamp -https://www.freecodecamp.org/osogrizz
+//   LinkedIn –https://linkedin.com/in/leohtorres| GitHub -https://github.com/osogrizz| 
+//   FreeCodeCamp -https://www.freecodecamp.org/osogrizz
   
-  Core Skills
-  JavaScript•React•jQuery• HTML5•CSS3•Gatsby• Git:[GitHub,GitLab]•GraphQL
+//   Core Skills
+//   JavaScript•React•jQuery• HTML5•CSS3•Gatsby• Git:[GitHub,GitLab]•GraphQL
 
-  Projects
+//   Projects
 
-  Personal website –https://leo-torres.tech/
-  Markdown Preview –https://markdown-preview.netlify.com/
-  Wikipedia Finder –http://codepen.io/osogrizz/full/VPrKoP/
+//   Personal website –https://leo-torres.tech/
+//   Markdown Preview –https://markdown-preview.netlify.com/
+//   Wikipedia Finder –http://codepen.io/osogrizz/full/VPrKoP/
   
 
-  Experience
+//   Experience
 
-  GatsbyOpen Source Developer|Feb. 2019-Present
-  •Contributed a Gatsby starter,to the Gatsbystarter library. 
+//   GatsbyOpen Source Developer|Feb. 2019-Present
+//   •Contributed a Gatsby starter,to the Gatsbystarter library. 
   
-  Valor NetworkMetuchen, NJ 
-  Developer|Aug.2017 –Mar.2018
+//   Valor NetworkMetuchen, NJ 
+//   Developer|Aug.2017 –Mar.2018
 
-  •Maintained codebase for modified PACS system and related Chrome extension.
-  •Server (Linux/Windows) maintenance and setup.
-  •Worked with existing Database performing SQL queries and HL7 request. 
-  - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab, HL7, Linux(RedHat), Windows Server,SQL, Twilio 
+//   •Maintained codebase for modified PACS system and related Chrome extension.
+//   •Server (Linux/Windows) maintenance and setup.
+//   •Worked with existing Database performing SQL queries and HL7 request. 
+//   - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab, HL7, Linux(RedHat), Windows Server,SQL, Twilio 
 
   
-  Developer Intern| May 2017 –Aug. 2017
+//   Developer Intern| May 2017 –Aug. 2017
 
-  •Assisted in developing a Chrome extension that provided a UI interface and additional             functionality for users of an existing PACS system.Contributed heavily to the Front-End           implementation of the Chrome extension. 
-  - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab
+//   •Assisted in developing a Chrome extension that provided a UI interface and additional             functionality for users of an existing PACS system.Contributed heavily to the Front-End           implementation of the Chrome extension. 
+//   - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab
 
-  Hawkins Personnel (Pearson)San Antonio, TXTechnicalSupport |2016–2017
+//   Hawkins Personnel (Pearson)San Antonio, TXTechnicalSupport |2016–2017
   
-  •First point of contact for Pearson’s clients via phone.
-  •Assisted clientsin the creation and configuration of their Pearson products / assessments
-  •Documented all troubleshooting procedures,  resolutions, or escalations.
+//   •First point of contact for Pearson’s clients via phone.
+//   •Assisted clientsin the creation and configuration of their Pearson products / assessments
+//   •Documented all troubleshooting procedures,  resolutions, or escalations.
 
-  U.S. Air ForceEngineerUtilities Engineer| May2003 –May 2009
+//   U.S. Air ForceEngineerUtilities Engineer| May2003 –May 2009
   
-  •Operation and maintenance of Reverse Osmosis Water Purification Units, providing potable water    for key units and assets.
-  •Supervision of daily work crews.
-  •Managed vehicle fleets, and records.
-  •Served as a translator on an as needed basis for German to English translations.
+//   •Operation and maintenance of Reverse Osmosis Water Purification Units, providing potable water    for key units and assets.
+//   •Supervision of daily work crews.
+//   •Managed vehicle fleets, and records.
+//   •Served as a translator on an as needed basis for German to English translations.
   
-  Education
+//   Education
   
-  General  Assembly, ImmersiveFull Stack Developer Course 
-  Tech covered: JavaScript, HTML5, CSS3, Ruby on Rails, SQL databases, Node.jsBA Integral Studies, 
+//   General  Assembly, ImmersiveFull Stack Developer Course 
+//   Tech covered: JavaScript, HTML5, CSS3, Ruby on Rails, SQL databases, Node.jsBA Integral Studies, 
   
-  California Institute of Integral StudiesGoogle  
+//   California Institute of Integral StudiesGoogle  
   
-  Challenge Udacity Front End Development Nanodegree awardee`
+//   Challenge Udacity Front End Development Nanodegree awardee`
 
-// Margins:
-doc.setDrawColor(255, 255, 255)
-	.setLineWidth(1 / 88)
-	.line(margin, margin, margin, 11 - margin)
-	.line(8.5 - margin, margin, 8.5 - margin, 11 - margin)
+// // Margins:
+// doc.setDrawColor(255, 255, 255)
+// 	.setLineWidth(1 / 88)
+// 	.line(margin, margin, margin, 11 - margin)
+// 	.line(8.5 - margin, margin, 8.5 - margin, 11 - margin)
 
-// the 3 blocks of text
-for (var i in fonts) {
-  if (fonts.hasOwnProperty(i)) {
-    font = fonts[i]
-    size = sizes[i]
+// // the 3 blocks of text
+// for (var i in fonts) {
+//   if (fonts.hasOwnProperty(i)) {
+//     font = fonts[i]
+//     size = sizes[i]
 
-    lines = doc.setFont(font[0], font[1])
-					.setFontSize(size)
-					.splitTextToSize(loremipsum, 7.5)
-		// Don't want to preset font, size to calculate the lines?
-		// .splitTextToSize(text, maxsize, options)
-		// allows you to pass an object with any of the following:
-		// {
-		// 	'fontSize': 12
-		// 	, 'fontStyle': 'Italic'
-		// 	, 'fontName': 'Times'
-		// }
-		// Without these, .splitTextToSize will use current / default
-		// font Family, Style, Size.
-    doc.text(0.5, verticalOffset + size / 72, lines)
+//     lines = doc.setFont(font[0], font[1])
+// 					.setFontSize(size)
+// 					.splitTextToSize(loremipsum, 7.5)
+// 		// Don't want to preset font, size to calculate the lines?
+// 		// .splitTextToSize(text, maxsize, options)
+// 		// allows you to pass an object with any of the following:
+// 		// {
+// 		// 	'fontSize': 12
+// 		// 	, 'fontStyle': 'Italic'
+// 		// 	, 'fontName': 'Times'
+// 		// }
+// 		// Without these, .splitTextToSize will use current / default
+// 		// font Family, Style, Size.
+//     doc.text(0.5, verticalOffset + size / 72, lines)
 
-    verticalOffset += (lines.length + 0.5) * size / 72
-  }
-}
+//     verticalOffset += (lines.length + 0.5) * size / 72
+//   }
+// }
 
-let handlePDF = (e) => {
-  e.preventDefault
-  doc.save('a4.pdf')
-}
+// let handlePDF = (e) => {
+//   e.preventDefault
+//   doc.save('a4.pdf')
+// }
 
 
 
@@ -245,7 +245,7 @@ const Contact = () => (
             <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
             <Btn type="submit"><span>Send</span></Btn>
 
-            <ResumePDF>
+            {/* <ResumePDF>
               <button 
                 type="button" 
                 onClick={handlePDF} 
@@ -255,7 +255,7 @@ const Contact = () => (
                 {' '}
                 <span role="img" aria-label="document">📄</span> 
               </button>
-            </ResumePDF>
+            </ResumePDF> */}
 
           </FormContainer>  
         </form>
