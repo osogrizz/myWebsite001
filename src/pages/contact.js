@@ -2,6 +2,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import jsPDF from 'jspdf';
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
@@ -107,13 +108,7 @@ const Btn = styled.button`
     &:after {
 
     }
-
-    /* &:after {
-      left: 120%;
-      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-    } */
   }
-
 `
 
 const TextArea = styled.textarea`
@@ -129,6 +124,22 @@ a {
   text-decoration: none;
 }
 `
+
+const myResume = `
+ Leo TorresWeb Developer(415) 948-4792 | lhtorres@yahoo.com| LinkedIn –https://linkedin.com/in/leohtorres|GitHub -https://github.com/osogrizz| FreeCodeCamp -https://www.freecodecamp.org/osogrizzCore SkillsJavaScript•React•jQuery• HTML5•CSS3•Gatsby• Git:[GitHub,GitLab]•GraphQLProjectsPersonal website –https://leo-torres.tech/Markdown Preview –https://markdown-preview.netlify.com/Wikipedia Finder –http://codepen.io/osogrizz/full/VPrKoP/ExperienceGatsbyOpen Source Developer|Feb. 2019-Present•Contributed a Gatsby starter,to the Gatsbystarter library. Valor NetworkMetuchen, NJDeveloper|Aug.2017 –Mar.2018•Maintained codebase for modified PACS system and related Chrome extension.•Server (Linux/Windows) maintenance and setup.•Worked with existing Database performing SQL queries and HL7 request. Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab, HL7, Linux(RedHat), Windows Server, SQL, Twilio  Developer Intern| May 2017 –Aug. 2017•Assisted in developing a Chrome extension that provided a UI interface and additional functionality for users of an existing PACS system.Contributed heavily to the Front-End implementation of the Chrome extension. Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLabHawkins Personnel (Pearson)San Antonio, TXTechnicalSupport |2016–2017•First point of contact for Pearson’s clients via phone.•Assisted clientsin the creation and configuration of their Pearson products / assessments•Documented all troubleshooting procedures, resolutions, or escalations.
+U.S. Air ForceEngineerUtilities Engineer| May2003 –May 2009•Operation and maintenance of Reverse Osmosis Water Purification Units.Providing potable water for key units and assets.•Supervision of daily work crews.•Managed vehicle fleets, and records.•Served as a translator on an as needed basis for German to English translations.EducationGeneral Assembly, ImmersiveFull Stack Developer Course Tech covered: JavaScript, HTML5, CSS3, Ruby on Rails, SQL databases, Node.jsBA Integral Studies, California Institute of Integral StudiesGoogle Challenge Udacity Front End Development Nanodegree awardee`
+
+let doc = new jsPDF()
+
+
+doc.text(myResume, 10, 10)
+
+let handlePDF = (e) => {
+  e.preventDefault
+  doc.save('a4.pdf')
+}
+
+
 
 const Contact = () => (
   <PageWrapper>
@@ -151,8 +162,9 @@ const Contact = () => (
             <Btn type="submit"><span>Send</span></Btn>
 
             <ResumePDF>
-              <a href="src/assets/resume.pdf" download="leo-torres-weDeveloper.pdf">Resume</a>
+              <button type="button" onClick={handlePDF} style={{ color: 'white', background: 'inherit', border: 'none', cursor: 'pointer' }}>PDF</button>
             </ResumePDF>
+
           </FormContainer>  
         </form>
 
