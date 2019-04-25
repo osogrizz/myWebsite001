@@ -135,37 +135,10 @@ const Portfolio = ({ data }) => (
               </a>
             </Card>
 
-            {/* <Card>
-              <a href="https://pizza-f23b6.firebaseapp.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  style={{ height: '100%' }}
-                  fluid={data.pizza.fluid}
-                />
-              </a>
-            </Card> */}
             <Card>
               <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
                 <Img
                   fluid={data.taco.fluid}
-                />
-              </a>
-            </Card>
-
-            <Card>
-              <a href="https://cocky-kowalevski-a61a98.netlify.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  fluid={data.calc.fluid}
-                />
-              </a>
-            </Card>
-          </CardContainer>
-
-          <CardContainer>
-            <Card>
-              <a href="https://markdown-preview.netlify.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  style={{ height: '100%' }}
-                  fluid={data.markDown.fluid}
                 />
               </a>
             </Card>
@@ -178,6 +151,21 @@ const Portfolio = ({ data }) => (
                 />
               </a>
             </Card>
+
+          </CardContainer>
+
+          <CardContainer>
+            
+            <Card>
+              <a href="https://markdown-preview.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  style={{ height: '100%' }}
+                  fluid={data.markDown.fluid}
+                />
+              </a>
+            </Card>
+
+            
 
           </CardContainer>
         </Container>
@@ -211,11 +199,11 @@ export const query = graphql`
     #   ...GatsbyImageSharpFluid
     #   }
     # }
-    calc: imageSharp(fluid: {originalName: {eq: "calculator.png" } } ) {
-      fluid(maxWidth: 400) {
-      ...GatsbyImageSharpFluid
-      }
-    }
+    # calc: imageSharp(fluid: {originalName: {eq: "calculator.png" } } ) {
+    #   fluid(maxWidth: 400) {
+    #   ...GatsbyImageSharpFluid
+    #   }
+    # }
     markDown: imageSharp(fluid: {originalName: {eq: "markDown.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
