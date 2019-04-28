@@ -176,7 +176,7 @@ const MyPDF = () => (
     <Page style={styles.body}>
 
       <Text style={styles.subtitle}>
-          Leo TorresWeb Developer (415) 948-4792 | lhtorres@yahoo.com| 
+          Leo TorresWeb Developer (415) 948-4792 | lhtorres@yahoo.com  | 
       </Text>
       
       <Text style={styles.text}>
@@ -189,59 +189,89 @@ const MyPDF = () => (
       </Text>
       
       <Text style={styles.text}>
-          JavaScript • React • jQuery • HTML5 • CSS3 • Gatsby • Git:[GitHub,GitLab] • GraphQL
+          JavaScript  •  React  •  jQuery  •  HTML5  •  CSS3  •  Gatsby  •  Git:[GitHub,GitLab]  •  GraphQL
       </Text>
 
       <Text style={styles.text}>
           Projects
-
-          Personal website –https://leo-torres.tech/
-          Markdown Preview –https://markdown-preview.netlify.com/
+      </Text>
+      
+      <Text style={styles.text}>
+          Personal website –https://leo-torres.tech/  -  
+          Markdown Preview –https://markdown-preview.netlify.com/  -    
           Wikipedia Finder –http://codepen.io/osogrizz/full/VPrKoP/
-          
 
+      </Text>
+      <Text style={styles.text}>
           Experience
-
-          GatsbyOpen Source Developer|Feb. 2019-Present
-          •Contributed a Gatsby starter,to the Gatsbystarter library. 
-          
-          Valor NetworkMetuchen, NJ 
-          Developer|Aug.2017 –Mar.2018
-
-          •Maintained codebase for modified PACS system and related Chrome extension.
-          •Server (Linux/Windows) maintenance and setup.
-          •Worked with existing Database performing SQL queries and HL7 request. 
-          - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab, HL7, Linux(RedHat), Windows Server,SQL, Twilio 
-
-          
-          Developer Intern| May 2017 –Aug. 2017
-
-          •Assisted in developing a Chrome extension that provided a UI interface and additional             functionality for users of an existing PACS system.Contributed heavily to the Front-End           implementation of the Chrome extension. 
-          - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab
-
-          Hawkins Personnel (Pearson)San Antonio, TXTechnicalSupport |2016–2017
-          
-          •First point of contact for Pearson’s clients via phone.
-          •Assisted clientsin the creation and configuration of their Pearson products / assessments
-          •Documented all troubleshooting procedures,  resolutions, or escalations.
-
-          U.S. Air ForceEngineerUtilities Engineer| May2003 –May 2009
-          
-          •Operation and maintenance of Reverse Osmosis Water Purification Units, providing potable water    for key units and assets.
-          •Supervision of daily work crews.
-          •Managed vehicle fleets, and records.
-          •Served as a translator on an as needed basis for German to English translations.
-          
-          Education
-          
-          General  Assembly, ImmersiveFull Stack Developer Course 
-          Tech covered: JavaScript, HTML5, CSS3, Ruby on Rails, SQL databases, Node.jsBA Integral Studies, 
-          
-          California Institute of Integral StudiesGoogle  
-          
-          Challenge Udacity Front End Development Nanodegree awardee
       </Text>
 
+      <Text style={styles.text}>
+          GatsbyOpen Source Developer | Feb. 2019-Present
+      </Text>
+
+      <Text style={styles.text}>
+          •  Contributed a Gatsby starter,to the Gatsbystarter library. 
+      </Text>
+      <Text style={styles.text}>
+          Valor NetworkMetuchen, NJ 
+          Developer | Aug.2017 –  Mar.2018
+      </Text>
+      <Text style={styles.text}>
+          •  Maintained codebase for modified PACS system and related Chrome extension.
+          •  Server (Linux/Windows) maintenance and setup.
+          •  Worked with existing Database performing SQL queries and HL7 request. 
+
+          - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab, HL7, Linux(RedHat),  Windows Server,SQL, Twilio 
+      </Text>
+
+      <Text style={styles.text}>
+          Developer Intern | May 2017 –Aug. 2017
+      </Text>
+      <Text style={styles.text}>
+          •  Assisted in developing a Chrome extension that provided a UI interface and additional    functionality for users of an existing PACS system.Contributed heavily to the Front-End implementation of the Chrome extension. 
+          - Technologies used: JavaScript, HTML5, CSS3, Bootstrap, GitLab
+      </Text>
+
+      <Text style={styles.text}>
+          Hawkins Personnel (Pearson) San Antonio, TXTechnicalSupport | 2016–2017
+      </Text>
+
+      <Text style={styles.text}>
+          •  First point of contact for Pearson’s clients via phone.
+          •  Assisted clientsin the creation and configuration of their Pearson products / assessments
+          •  Documented all troubleshooting procedures,  resolutions, or escalations.
+      </Text>
+
+      <Text style={styles.text}>
+          U.S. Air ForceEngineerUtilities Engineer | May2003 –May 2009
+      </Text>
+
+      <Text style={styles.text}>
+          •  Operation and maintenance of Reverse Osmosis Water Purification Units, providing potable water for key units and assets.
+          •  Supervision of daily work crews.
+          •  Managed vehicle fleets, and records.
+          •  Served as a translator on an as needed basis for German to English translations.
+      </Text>
+
+      <Text style={styles.text}>
+          Education
+      </Text>
+
+      <Text style={styles.text}>
+          General  Assembly:   ImmersiveFull Stack Developer Course 
+          Tech covered: JavaScript, HTML5, CSS3, Ruby on Rails, SQL databases, Node.jsBA
+      </Text>
+
+      <Text style={styles.text}>
+          Integral Studies:  
+          California Institute of Integral Studies Google  
+      </Text>
+
+      <Text style={styles.text}>
+          Challenge Udacity Front End Development Nanodegree awardee
+      </Text>
+          
     </Page>
   </Document>
 )
