@@ -5,6 +5,7 @@ module.exports = {
     author: `Leo Torres <leohtor@gmail.com>`,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-styled-components',
     {
