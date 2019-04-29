@@ -6,13 +6,8 @@ const Wrapper = styled.div`
     z-index: 100;
     max-width: 80px;
     margin-left: 15%;
-<<<<<<< HEAD
-    margin-bottom: 20px;
-    position: relative;
-=======
     /* margin-bottom: 20px; */
     padding-bottom: 20px;
->>>>>>> LogoBorder
 
     ul {
         margin-top: 40px;
@@ -41,19 +36,6 @@ const Btn = styled.div`
     border: 2px solid orange;
     outline: none;
     background: #222;
-<<<<<<< HEAD
-`
-
-const SmallBtn = styled.div`
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid orange;
-    outline: none;
-    background: #444;
-`
- 
-=======
 
     &:hover {
         ul {
@@ -77,34 +59,12 @@ const SBtn = styled.div`
   }
 `
 
->>>>>>> LogoBorder
 const Modal = styled.div`
   display: flex;
   background-color: orange;
   border: 2px solid white;
   border-radius: 4px;
   color: #444;
-<<<<<<< HEAD
-
-  span {
-    line-height: 1.6;
-    font-size: 1.8rem;
-    font-weight: 300;
-  }
-  
-
-  &:hover {
-      visibility: visible;
-    
-  }
-
-  section {
-    margin: 15px 20px;
-
-    option {
-      /* font-weight: 600; */
-      font-size: 14px;
-=======
   line-height: 1.2;
   font-size: 35px;
   padding: 2px 10px 8px;
@@ -128,7 +88,6 @@ const Modal = styled.div`
       margin: 0 5px;
       margin-top: -16px;
       font-size: 12px;
->>>>>>> LogoBorder
     }
   }
 `
@@ -158,34 +117,18 @@ const ThemePicker = () => {
       <Btn>
         <ul>
           <Modal>
-<<<<<<< HEAD
-
-            <section>
-              <SmallBtn style={{  border: '2px solid #ffe8cc'}} />
-              <option>Dark</option>
-            </section>
-
-            <span>|</span>
-
-            <section>
-              <SmallBtn style={{ background: '#ffe8cc', border: '2px solid olive'}} />
-              <option>Light</option>
-            </section>
-
-=======
-            <li onClick={() => { console.log('dark theme')}}>
+            {/* <li onClick={() => { console.log('dark theme')}}>
               <SBtn
               
                 style={{ background: '#222', border: '2px solid darkorange' }}
               />
                 Dark 
-            </li>
+            </li> */}
         |
-            <li onClick={() => { console.log('light theme')}}>
+            {/* <li onClick={() => { console.log('light theme')}}>
               <SBtn style={{ background: '#fff', border: '2px solid green' }} />
                 Light
-            </li>
->>>>>>> LogoBorder
+            </li> */}
           </Modal>
         </ul>
       </Btn>

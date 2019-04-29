@@ -119,16 +119,6 @@ const TextArea = styled.textarea`
   padding: 10px;
 `
 
-
-
-
-
-
-
-
-
-
-
 const Contact = () => (
   <PageWrapper>
     <Layout>

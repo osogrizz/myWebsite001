@@ -1,5 +1,8 @@
 import React from 'react'
-import { Page, Text, Document, StyleSheet, Font } from '@react-pdf/renderer'
+if (typeof window !== `undefined`) {
+  import { Page, Text, Document, StyleSheet, Font } from '@react-pdf/renderer'
+}
+
 
 const styles = StyleSheet.create({
   body: {
@@ -47,12 +50,12 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: 'grey',
   },
-});
+})
 
 Font.register(
   'https://fonts.gstatic.com/s/oswald/v13/Y_TKV6o8WovbUd3m_X9aAA.ttf',
   { family: 'Oswald' },
-);
+)
 
 const MyPDF = () => (
   <Document>
