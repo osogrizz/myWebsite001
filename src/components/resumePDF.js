@@ -1,7 +1,6 @@
 import React from 'react'
-if (typeof window !== `undefined`) {
-  import { Page, Text, Document, StyleSheet, Font } from '@react-pdf/renderer'
-}
+import { Page, Text, Document, StyleSheet, Font } from '@react-pdf/renderer'
+
 
 
 const styles = StyleSheet.create({
