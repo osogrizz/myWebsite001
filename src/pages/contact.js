@@ -173,9 +173,6 @@ class Contact extends Component {
                   
                 }
 
-
-
-
               </FormContainer>  
             </form>
 

@@ -19,7 +19,6 @@
     "gatsby-transformer-sharp": "^2.1.13",
     "pdfy": "^0.3.0",
     "prop-types": "^15.7.1",
-    "puppeteer": "^1.14.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-helmet": "^5.2.0",
