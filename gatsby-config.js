@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Leo Torres`,
@@ -5,7 +9,15 @@ module.exports = {
     author: `Leo Torres <leohtor@gmail.com>`,
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `35gj90l14htk`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.GATSBY_API_URL,
+      },
+    },
+    `puppeteer`,
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-styled-components',
     {

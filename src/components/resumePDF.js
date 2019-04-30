@@ -2,6 +2,9 @@ import React from 'react'
 import { Page, Text, Document, StyleSheet, Font } from '@react-pdf/renderer'
 
 
+// const puppeteer = require('puppeteer')
+// const fs = require('fs-extra')
+
 
 const styles = StyleSheet.create({
   body: {
@@ -55,6 +58,35 @@ Font.register(
   'https://fonts.gstatic.com/s/oswald/v13/Y_TKV6o8WovbUd3m_X9aAA.ttf',
   { family: 'Oswald' },
 )
+
+// ( async function() {
+//   try {
+
+//     const browser = await puppeteer.launch()
+//     const page = await browser.newPage()
+
+//     await page.setContent('<h1>Hello</h1>')
+//     await page.emulateMedia('screen')
+//     await page.pdf({
+//       path: 'myPDF.pdf',
+//       format: 'A4',
+//       printBackground: true
+//     })
+//     // eslint-disable-next-line no-console
+//     console.log('done')
+//     await browser.close()
+//     process.exit()
+
+//   } catch (error) {
+//     // eslint-disable-next-line no-console
+//     console.log('error: ', error)
+//   }
+// })()
+
+
+
+
+
 
 const MyPDF = () => (
   <Document>

@@ -1,11 +1,14 @@
 /* eslint-disable no-irregular-whitespace */
-import React from 'react'
+import React, { Component } from 'react'
 import styled from 'styled-components'
 import { PDFDownloadLink } from '@react-pdf/renderer'
 import MyPDF from '../components/resumePDF'
+// import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+
+// const puppeteer = require('puppeteer')
 
 const PageWrapper = styled.div`
     background: #323944 !important;
@@ -119,52 +122,84 @@ const TextArea = styled.textarea`
   padding: 10px;
 `
 
-const Contact = () => (
-  <PageWrapper>
-    <Layout>
-      <SEO title="Contact" />
-      <FormWrapper>
 
-        <h1 style={{  fontWeight: 300, fontSize: '4.25rem', marginBottom: '120px', marginTop: '1.45rem' }}>Contact</h1>            
-        <h4>Stop by and say ​“hi”. Or drop me a note.</h4>
+
+
+class Contact extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      displayPDF: false
+    }
+  }
+
+  componentDidMount() {
+    this.setState({
+      displayPDF: true
+    })
+  }
+
+
+
+  render() {
+    const { displayPDF } = this.state
+    return (
+      <PageWrapper>
+        <Layout>
+          <SEO title="Contact" />
+          <FormWrapper>
+
+            <h1 style={{  fontWeight: 300, fontSize: '4.25rem', marginBottom: '120px', marginTop: '1.45rem' }}>Contact</h1>            
+            <h4>Stop by and say ​“hi”. Or drop me a note.</h4>
                         
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
 
-          <FormContainer>
-            <InputStyles type="name" name="name" placeholder="Name" required />
+              <FormContainer>
+                <InputStyles type="name" name="name" placeholder="Name" required />
 
-            <InputStyles type="email" name="email" placeholder="Email" required />
+                <InputStyles type="email" name="email" placeholder="Email" required />
 
-            <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
-            <Btn type="submit"><span>Send</span></Btn>
+                <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
+                <Btn type="submit"><span>Send</span></Btn>
 
-            <PDFDownloadLink document={<MyPDF />} fileName="Leo-Torres-Resume.pdf" style={{ color: 'white', textDecoration: 'none' }}>
-              {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Resume 📄')}
-            </PDFDownloadLink>
+                {
+                  displayPDF && (
+
+                    <PDFDownloadLink document={<MyPDF />} fileName="Leo-Torres-Resume.pdf" style={{ color: 'white', textDecoration: 'none' }}>
+                      {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Resume 📄')}
+                    </PDFDownloadLink>
+                  )
+                  
+                }
 
 
-          </FormContainer>  
-        </form>
 
-        <h5>QUESTIONS OR COMMENTS?</h5>
 
-        <p>
+              </FormContainer>  
+            </form>
+
+            <h5>QUESTIONS OR COMMENTS?</h5>
+
+            <p>
           Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
-        </p>
+            </p>
 
-        <h5>Leo Torres @ BobaBird Websites</h5>    
+            <h5>Leo Torres @ BobaBird Websites</h5>    
                         
-        <p>
+            <p>
           tel.
-          <a href="tel:4159484792"> (415) 948-4792</a>
-        </p>
+              <a href="tel:4159484792"> (415) 948-4792</a>
+            </p>
                         
-      </FormWrapper>   
+          </FormWrapper>   
 
 
-    </Layout>
-  </PageWrapper> 
-)
+        </Layout>
+      </PageWrapper> 
+    )
+  }
+}
 
 export default Contact
+
