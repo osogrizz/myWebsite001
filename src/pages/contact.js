@@ -80,7 +80,7 @@ const InputStyles = styled.input`
 const Btn = styled.button`
     margin: 50px auto;
     border-radius: 4px;
-    border: 3px solid #6a6a6a !important;
+    border: 2px solid #6a6a6a !important;
     font-weight: 400;
     font-size: 16px;
     line-height: 45px;
