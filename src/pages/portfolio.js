@@ -165,6 +165,15 @@ const Portfolio = ({ data }) => (
               </a>
             </Card>
 
+            <Card>
+              <a href="https://festive-goldwasser-d7a509.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  style={{ height: '100%' }}
+                  fluid={data.cocktails.fluid}
+                />
+              </a>
+            </Card>
+
             
 
           </CardContainer>
@@ -194,11 +203,11 @@ export const query = graphql`
       ...GatsbyImageSharpFluid
       }
     }
-    # pizza: imageSharp(fluid: {originalName: {eq: "pizza.png" } } ) {
-    #   fluid(maxWidth: 400) {
-    #   ...GatsbyImageSharpFluid
-    #   }
-    # }
+    cocktails: imageSharp(fluid: {originalName: {eq: "whisper-sisters.png" } } ) {
+      fluid(maxWidth: 400) {
+      ...GatsbyImageSharpFluid
+      }
+    }
     # calc: imageSharp(fluid: {originalName: {eq: "calculator.png" } } ) {
     #   fluid(maxWidth: 400) {
     #   ...GatsbyImageSharpFluid
