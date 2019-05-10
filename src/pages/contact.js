@@ -96,7 +96,7 @@ const Btn = styled.button`
 
     &:active {
       background-color: red !important;
-      border: 3px solid red !important;
+      border: 2px solid red !important;
       transition: all 0.00001s ease-out !important;
     }
   

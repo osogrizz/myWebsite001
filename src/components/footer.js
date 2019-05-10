@@ -4,13 +4,6 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaFreeCodeCamp } from 'react-icons/fa
 import { FiTwitter } from 'react-icons/fi';
 // FiFacebook -- to add Facebook SVG image
 
-// const MainWrapper = styled.div`
-//   background-color:  #323944;
-//   color: #6a6a6a;
-//   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-//     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-// `
-
 const SectionContainer = styled.div`
   padding-top: 120px;
   min-height: 390px;
