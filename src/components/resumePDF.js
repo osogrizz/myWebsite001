@@ -60,7 +60,7 @@ const MyPDF = () => (
     <Page style={styles.body}>
 
       <Text style={styles.subtitle}>
-          Leo TorresWeb Developer (415) 948-4792 | lhtorres@yahoo.com  | 
+          Leo Torres Web Developer (415) 948-4792 | lhtorres@yahoo.com  | 
       </Text>
       
       <Text style={styles.text}>
