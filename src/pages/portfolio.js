@@ -174,6 +174,15 @@ const Portfolio = ({ data }) => (
               </a>
             </Card>
 
+            <Card>
+              <a href="https://pensive-jackson-5fb8fd.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <Img
+                  style={{ height: '100%' }}
+                  fluid={data.silver.fluid}
+                />
+              </a>
+            </Card>
+
             
 
           </CardContainer>
@@ -224,6 +233,11 @@ export const query = graphql`
       }
     }
     taco: imageSharp(fluid: {originalName: {eq: "taco.png" } } ) {
+      fluid(maxWidth: 400) {
+      ...GatsbyImageSharpFluid
+      }
+    }
+    silver: imageSharp(fluid: {originalName: {eq: "silvergraph.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
       }
