@@ -174,14 +174,14 @@ const Portfolio = ({ data }) => (
               </a>
             </Card>
 
-            <Card>
+            {/* <Card>
               <a href="https://pensive-jackson-5fb8fd.netlify.com/" target="_blank" rel="noopener noreferrer">
                 <Img
                   style={{ height: '100%' }}
-                  fluid={data.silver.fluid}
+                  fluid={data.parallax.fluid}
                 />
               </a>
-            </Card>
+            </Card> */}
 
             
 
@@ -237,7 +237,7 @@ export const query = graphql`
       ...GatsbyImageSharpFluid
       }
     }
-    silver: imageSharp(fluid: {originalName: {eq: "silvergraph.png" } } ) {
+    parallax: imageSharp(fluid: {originalName: {eq: "parallax-site.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
       }
