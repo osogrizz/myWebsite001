@@ -237,11 +237,6 @@ export const query = graphql`
       ...GatsbyImageSharpFluid
       }
     }
-    parallax: imageSharp(fluid: {originalName: {eq: "parallax-site.png" } } ) {
-      fluid(maxWidth: 400) {
-      ...GatsbyImageSharpFluid
-      }
-    }
     tmdb: imageSharp(fluid: {originalName: {eq: "tmdb.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
