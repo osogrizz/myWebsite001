@@ -126,14 +126,14 @@ const Portfolio = ({ data }) => (
           <p>Please have a look at some examples of my work.</p>
 
           <CardContainer>
-            <Card>
+            {/* <Card>
               <a href="https://somaticwellness-coach.com/" target="_blank" rel="noopener noreferrer">
                 <Img
                   style={{ height: '100%' }}
                   fluid={data.somatic.fluid}
                 />
               </a>
-            </Card>
+            </Card> */}
 
             <Card>
               <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
