@@ -207,11 +207,11 @@ export const query = graphql`
       ...GatsbyImageSharpFluid
       }
     }
-    somatic: imageSharp(fluid: {originalName: {eq: "somatic.png" } } ) {
-      fluid(maxWidth: 400) {
-      ...GatsbyImageSharpFluid
-      }
-    }
+    # somatic: imageSharp(fluid: {originalName: {eq: "somatic.png" } } ) {
+    #   fluid(maxWidth: 400) {
+    #   ...GatsbyImageSharpFluid
+    #   }
+    # }
     cocktails: imageSharp(fluid: {originalName: {eq: "whisper-sisters.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
