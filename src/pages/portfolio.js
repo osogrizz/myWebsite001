@@ -126,14 +126,7 @@ const Portfolio = ({ data }) => (
           <p>Please have a look at some examples of my work.</p>
 
           <CardContainer>
-            {/* <Card>
-              <a href="https://somaticwellness-coach.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  style={{ height: '100%' }}
-                  fluid={data.somatic.fluid}
-                />
-              </a>
-            </Card> */}
+            
 
             <Card>
               <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
@@ -207,21 +200,13 @@ export const query = graphql`
       ...GatsbyImageSharpFluid
       }
     }
-    # somatic: imageSharp(fluid: {originalName: {eq: "somatic.png" } } ) {
-    #   fluid(maxWidth: 400) {
-    #   ...GatsbyImageSharpFluid
-    #   }
-    # }
+    
     cocktails: imageSharp(fluid: {originalName: {eq: "whisper-sisters.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
       }
     }
-    # calc: imageSharp(fluid: {originalName: {eq: "calculator.png" } } ) {
-    #   fluid(maxWidth: 400) {
-    #   ...GatsbyImageSharpFluid
-    #   }
-    # }
+    
     markDown: imageSharp(fluid: {originalName: {eq: "markDown.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
