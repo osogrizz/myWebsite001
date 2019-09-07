@@ -14,6 +14,7 @@
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-plugin-styled-components": "^3.0.5",
+    "gatsby-source-contentful": "2.0.41",
     "gatsby-source-filesystem": "^2.0.29",
     "gatsby-transformer-sharp": "^2.1.13",
     "pdfy": "^0.3.0",
