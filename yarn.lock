@@ -5933,7 +5933,7 @@ gatsby-plugin-react-helmet@^3.0.6:
   dependencies:
     "@babel/runtime" "^7.0.0"
 
-gatsby-plugin-sharp@^2.0.35:
+gatsby-plugin-sharp@^2.2.1:
   version "2.2.20"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.2.20.tgz#89e265cbdef195568d8f8a3032ed35958b4e17ff"
   integrity sha512-pvzF6CmaimYddQlB3MG5PuGlIoH39SWMmKxAoJyVNuSTcrkcBborOCKKStqtgXtTGy+8xBp+mZQK87M+FiZjeg==
@@ -6029,7 +6029,7 @@ gatsby-transformer-sharp@^2.1.13:
     probe-image-size "^4.0.0"
     sharp "^0.21.3"
 
-gatsby@^2.3.25:
+gatsby@^2.9.10:
   version "2.15.9"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.15.9.tgz#a8a1ccf14cc7f0a20c1f18a7ded98c0996cd27ac"
   integrity sha512-c+QtdiMivZI6xQBWx/ClwqXhatqC5/bJjIWXVL5ik+PBsmoa1EsH8XA+FHZUVQsGN8pZ2kF+guEaSZ+a5ONy2g==
