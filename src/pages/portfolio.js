@@ -4,6 +4,8 @@ import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
 
+import { FaGithub } from 'react-icons/fa';
+
 import Layout from '../components/layout';
 import SEO from '../components/seo'
 
@@ -91,11 +93,28 @@ const Card = styled.div`
     padding: 0.8rem;
   }
 
-  p {
-    z-index: 99;
+  h3 {
     padding: 0.8rem;
-    font-size: 18px;
-    color: #fff;
+    font-size: 0.8rem;
+    color: orange;
+    /* text-align: left; */
+   }
+
+  p {
+    text-align: left;
+    padding: 0.8rem;
+    font-size: 0.6rem;
+    color: orange;
+  }
+
+  #github {
+    font-size: 2rem;
+    fill: #6a6a6a;
+    &:hover {
+      stroke-width: 0;
+      /* fill: #9542f4 !important; */
+      fill: orange !important;
+    }
   }
 
   @media (max-width: 475px) {
@@ -129,20 +148,26 @@ const Portfolio = ({ data }) => (
             
 
             <Card>
+              <Img 
+                fluid={data.taco.fluid}
+              />
               <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  fluid={data.taco.fluid}
-                />
+                <h3>Lily&#39;s Taqueria</h3>
               </a>
+              <p>Tech Stack: React, Gatsby, JavaScript, CSS, Styled Components, GraphQL</p>
+              <a href="https://github.com/osogrizz/lilys-taqueria" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
 
             <Card>
+              <Img
+                // style={{ height: '100%' }}
+                fluid={data.santaFe.fluid}
+              />
               <a href="https://gatsby-starter-santa-fe.netlify.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  style={{ height: '100%' }}
-                  fluid={data.santaFe.fluid}
-                />
+                <h3>Gatsby Starter Santa Fe</h3>
               </a>
+              <p>Tech Stack: React, Gatsby, JavaScript, CSS, Styled Components, GraphQL</p>
+              <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
 
           </CardContainer>
@@ -150,33 +175,40 @@ const Portfolio = ({ data }) => (
           <CardContainer>
             
             <Card>
+              <Img
+                // style={{ height: '100%' }}
+                fluid={data.markDown.fluid}
+              />
               <a href="https://markdown-preview.netlify.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  style={{ height: '100%' }}
-                  fluid={data.markDown.fluid}
-                />
+                <h3>Markdown Previewer</h3>
               </a>
+              <p>Tech Stack: Javascript, MD, CSS, Styled Components, Gatsby</p>
+              <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
 
             <Card>
+              <Img
+                // style={{ height: '100%' }}
+                fluid={data.cocktails.fluid}
+              />
               <a href="https://mystifying-bartik-7d34ab.netlify.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  style={{ height: '100%' }}
-                  fluid={data.cocktails.fluid}
-                />
+                <h3>Whisper Sister&#39;s</h3>
               </a>
+              <p>Tech Stack: Gatsby, Styled Components, Instagram API, Styled Components, CSS </p>
+              <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
 
             <Card>
+              <Img
+                // style={{ height: '100%' }}
+                fluid={data.tmdb.fluid}
+              />
               <a href="https://silly-brattain-800b5c.netlify.com/" target="_blank" rel="noopener noreferrer">
-                <Img
-                  style={{ height: '100%' }}
-                  fluid={data.tmdb.fluid}
-                />
+                <h3>Movie Database</h3>
               </a>
-            </Card>
-
-            
+              <p>Tech Stack: JavaScript, Styled Components, CSS, The Movie Database API </p>
+              <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
+            </Card> 
 
           </CardContainer>
         </Container>
