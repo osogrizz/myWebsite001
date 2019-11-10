@@ -126,7 +126,7 @@ const Card = styled.div`
   }
 
   @media (max-width: 475px) {
-    margin: 40px auto;
+    margin: 40px auto 80px;
     min-width: 80vw;
 
     p {
@@ -137,7 +137,7 @@ const Card = styled.div`
   @media (min-width: 476px) and (max-width: 1315px) {
     display: block;
     padding: 0;
-    margin: 40px auto;
+    margin: 40px auto 100px;
     width: 65vw;
   }
   `
