@@ -97,6 +97,8 @@ const Card = styled.div`
     padding: 0.8rem;
     font-size: 0.8rem;
     color: orange;
+    font-weight: 400;
+    letter-spacing: 2px;
     /* text-align: left; */
    }
 
@@ -105,6 +107,8 @@ const Card = styled.div`
     padding: 0.8rem;
     font-size: 0.6rem;
     color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
   }
 
   a {
