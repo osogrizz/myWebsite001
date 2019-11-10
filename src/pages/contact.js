@@ -132,7 +132,7 @@ const Contact = () => (
       <SEO title="Contact" />
       <FormWrapper>
 
-        <h1 style={{  fontWeight: 300, fontSize: '4.25rem', marginBottom: '120px', marginTop: '1.45rem' }}>Contact</h1>            
+        <h1 style={{  fontWeight: 300, fontSize: '4.25rem', marginBottom: '44px', marginTop: '1.45rem' }}>Contact</h1>            
         <h4>Stop by and say ​“hi”. Or drop me a note.</h4>
                     
         <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
