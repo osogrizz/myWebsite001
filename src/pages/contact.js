@@ -142,7 +142,7 @@ class Contact extends Component {
 
 
   render() {
-    const { displayPDF } = this.state
+    // const { displayPDF } = this.state
     return (
       <PageWrapper>
         <Layout>
