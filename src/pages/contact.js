@@ -1,5 +1,5 @@
 /* eslint-disable no-irregular-whitespace */
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 // import { PDFDownloadLink } from '@react-pdf/renderer'
 // import MyPDF from '../components/resumePDF'
@@ -125,78 +125,49 @@ const TextArea = styled.textarea`
 
 
 
-class Contact extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      displayPDF: false
-    }
-  }
+const Contact = () => (
 
-  componentDidMount() {
-    this.setState({
-      displayPDF: true
-    })
-  }
+  <PageWrapper>
+    <Layout>
+      <SEO title="Contact" />
+      <FormWrapper>
 
+        <h1 style={{  fontWeight: 300, fontSize: '4.25rem', marginBottom: '120px', marginTop: '1.45rem' }}>Contact</h1>            
+        <h4>Stop by and say ​“hi”. Or drop me a note.</h4>
+                    
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />
 
+          <FormContainer>
+            <InputStyles type="name" name="name" placeholder="Name" required />
 
-  render() {
-    // const { displayPDF } = this.state
-    return (
-      <PageWrapper>
-        <Layout>
-          <SEO title="Contact" />
-          <FormWrapper>
+            <InputStyles type="email" name="email" placeholder="Email" required />
 
-            <h1 style={{  fontWeight: 300, fontSize: '4.25rem', marginBottom: '120px', marginTop: '1.45rem' }}>Contact</h1>            
-            <h4>Stop by and say ​“hi”. Or drop me a note.</h4>
-                        
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-              <input type="hidden" name="form-name" value="contact" />
+            <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
+            <Btn type="submit"><span>Send</span></Btn>
 
-              <FormContainer>
-                <InputStyles type="name" name="name" placeholder="Name" required />
+          </FormContainer>  
+        </form>
 
-                <InputStyles type="email" name="email" placeholder="Email" required />
+        <h5>QUESTIONS OR COMMENTS?</h5>
 
-                <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
-                <Btn type="submit"><span>Send</span></Btn>
-
-                {/* {
-                  displayPDF && (
-
-                    <PDFDownloadLink document={<MyPDF />} fileName="Leo-Torres-Resume.pdf" style={{ color: 'white', textDecoration: 'none' }}>
-                      {({ blob, url, loading, error }) => (loading ? 'Loading document...' : 'Resume 📄')}
-                    </PDFDownloadLink>
-                  )
-                  
-                } */}
-
-              </FormContainer>  
-            </form>
-
-            <h5>QUESTIONS OR COMMENTS?</h5>
-
-            <p>
+        <p>
           Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.
-            </p>
+        </p>
 
-            <h5>Leo Torres @ BobaBird Websites</h5>    
-                        
-            <p>
-          tel.
-              <a href="tel:4159484792"> (415) 948-4792</a>
-            </p>
-                        
-          </FormWrapper>   
+        <h5>Leo Torres @ BobaBird Websites</h5>    
+                    
+        <p>
+      tel.
+          <a href="tel:4159484792"> (415) 948-4792</a>
+        </p>
+                    
+      </FormWrapper>   
 
 
-        </Layout>
-      </PageWrapper> 
-    )
-  }
-}
+    </Layout>
+  </PageWrapper> 
+)
 
 export default Contact
 
