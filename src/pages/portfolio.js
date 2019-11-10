@@ -107,6 +107,10 @@ const Card = styled.div`
     color: orange;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   #github {
     font-size: 2rem;
     fill: #6a6a6a;

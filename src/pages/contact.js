@@ -1,8 +1,8 @@
 /* eslint-disable no-irregular-whitespace */
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { PDFDownloadLink } from '@react-pdf/renderer'
-import MyPDF from '../components/resumePDF'
+// import { PDFDownloadLink } from '@react-pdf/renderer'
+// import MyPDF from '../components/resumePDF'
 // import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
@@ -163,7 +163,7 @@ class Contact extends Component {
                 <TextArea name="message" id="" cols="30" rows="8" placeholder="Message" required />
                 <Btn type="submit"><span>Send</span></Btn>
 
-                {
+                {/* {
                   displayPDF && (
 
                     <PDFDownloadLink document={<MyPDF />} fileName="Leo-Torres-Resume.pdf" style={{ color: 'white', textDecoration: 'none' }}>
@@ -171,7 +171,7 @@ class Contact extends Component {
                     </PDFDownloadLink>
                   )
                   
-                }
+                } */}
 
               </FormContainer>  
             </form>
