@@ -169,6 +169,18 @@ const Portfolio = ({ data }) => (
             <Card>
               <Img
                 // style={{ height: '100%' }}
+                fluid={data.conjugator.fluid}
+              />
+              <a href="https://conjugator-bw.netlify.com/" target="_blank" rel="noopener noreferrer">
+                <h3>Spanish Conjugator App</h3>
+              </a>
+              <p>Tech Stack: JavaScript, React, React Router, API </p>
+              <a href="https://github.com/Conjugator-bw/conj-FE/tree/master/campeon-conjugator" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
+            </Card>
+
+            <Card>
+              <Img
+                // style={{ height: '100%' }}
                 fluid={data.santaFe.fluid}
               />
               <a href="https://gatsby-starter-santa-fe.netlify.com/" target="_blank" rel="noopener noreferrer">
@@ -267,5 +279,11 @@ export const query = graphql`
       ...GatsbyImageSharpFluid
       }
     }
+    conjugator: imageSharp(fluid: {originalName: {eq: "conjugator.png" } } ) {
+      fluid(maxWidth: 400) {
+      ...GatsbyImageSharpFluid
+      }
+    }
+
   }
 `;
