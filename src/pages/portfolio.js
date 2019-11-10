@@ -76,7 +76,7 @@ a {
 
 const Card = styled.div`
 
-  margin: 20px;
+  margin: 40px;
   text-align: center;
   overflow: hidden;
   border-radius: 4px;
