@@ -78,6 +78,7 @@ const HeaderContainer = styled.div`
 
 const LogoContainer = styled.div`
   min-width: 120px;
+  height: fit-content;
   text-decoration: none;
   padding-left: 0;
   transition: all .1s;

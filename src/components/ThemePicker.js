@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-// import PropTypes from 'prop-types'
+
+import useDarkMode from '../hooks/useDarkMode'
 
 const Wrapper = styled.div`
     z-index: 100;
@@ -59,6 +60,10 @@ const SBtn = styled.div`
   }
 `
 
+const ModalContainer = styled.div`
+
+`
+
 const Modal = styled.div`
   display: flex;
   background-color: orange;
@@ -81,6 +86,11 @@ const Modal = styled.div`
   @media (max-width: 600px) {
     margin-right: 12rem;
     font-size: 40px;
+    letter-spacing: 0;
+    align-items: baseline;
+    justify-content: center;
+    line-height: 40px;
+
     /* line-height: 0.8; */
      
     li {
@@ -97,7 +107,7 @@ const Modal = styled.div`
 // toggle.addEventListener('click', function(e) {
 //   e.preventDefault();
 
-//   if (document.body.classList.contains('light-them')) {
+//   if (document.body.classList.contains('light-theme')) {
 //     // Turning the theme off:
 //     document.body.classList.remove('light-theme');
 //     // Reverse logic on the button text, so that users can turn
@@ -112,26 +122,46 @@ const Modal = styled.div`
 
 
 const ThemePicker = () => {
+  const [darkMode, setDarkMode] = useDarkMode('darkMode')
+
+  const toggleMode = (e) => {
+    e.preventDefault()
+    setDarkMode(!darkMode)
+  }
+
+  const handleDark = (e) => {
+    e.preventDefault()
+
+  }
+
+  const handleLight = (e) => {
+    e.preventDefault()
+  }
+
+
+
   return (    
     <Wrapper>
-      <Btn>
+      <Btn onClick={toggleMode} className={darkMode ? 'toggle toggled' : 'toggle'}> 
         <ul>
           <Modal>
-            {/* <li onClick={() => { console.log('dark theme')}}>
+            <li className={darkMode ? 'toggle toggled' : 'toggle'}>
               <SBtn
-              
+                onClick={handleDark}
                 style={{ background: '#222', border: '2px solid darkorange' }}
               />
                 Dark 
-            </li> */}
+            </li>
         |
-            {/* <li onClick={() => { console.log('light theme')}}>
-              <SBtn style={{ background: '#fff', border: '2px solid green' }} />
+            <li className={!darkMode ? 'toggle toggled' : 'toggle'}>
+              <SBtn onClick={handleLight} style={{ background: '#fff', border: '2px solid green' }} />
                 Light
-            </li> */}
+            </li>
           </Modal>
         </ul>
       </Btn>
+
+
     </Wrapper> 
   )
 }
