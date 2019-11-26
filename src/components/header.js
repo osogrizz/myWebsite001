@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 import Image from './image'
 
+import ThemePicker from './ThemePicker'
+
 const HeaderWrapper = styled.div`
   position: relative;
   display: flex;
@@ -155,6 +157,9 @@ const Header = () => (
           </li>
           <li>
             <Link to="/portfolio/" activeStyle={activeLinkStyle}>Portfolio</Link>
+          </li>
+          <li>
+            <ThemePicker />
           </li>
         </ul>
       </NavContainer>
