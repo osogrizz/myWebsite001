@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     z-index: 100;
     max-width: 80px;
     margin-left: 15%;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     padding-bottom: 20px;
 
     ul {
@@ -73,25 +73,27 @@ const Modal = styled.div`
   line-height: 1.2;
   font-size: 35px;
   padding: 2px 10px 8px;
-  margin-right: 28px;  
-
-
+  margin-right: 22px;  
+  
+  
   li {
     display: flex !important;
     margin: 10px 20px;
     font-size: 16px !important;
     line-height: 0.5;
   }
+  
+  @media (max-width: 650px) {
+    margin-right: 8rem;  
+
+  }
 
   @media (max-width: 600px) {
     margin-right: 12rem;
     font-size: 40px;
-    letter-spacing: 0;
     align-items: baseline;
     justify-content: center;
-    line-height: 40px;
 
-    /* line-height: 0.8; */
      
     li {
       line-height: 0.5;
