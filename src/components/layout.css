@@ -10,6 +10,7 @@ body {
 :root {
   --bg: #323944;
   --text-color: #6a6a6a;
+  --p-text-color: #fff;
   --shadow: #4d4d4d; 
   --link-color: #4d4d4d;
   --link-hover: #898989;
@@ -18,6 +19,8 @@ body {
 .light-theme {
   --bg: #fff;
   --text-color: #555;
+  --p-text-color: #555;
+  --shadow: #898989;
   --link-color: #639A67;
   --link-hover: #205D67;
 }

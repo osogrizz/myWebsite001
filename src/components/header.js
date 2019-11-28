@@ -82,7 +82,6 @@ const LogoContainer = styled.div`
   text-decoration: none;
   padding-left: 0;
   transition: all .1s;
-  /* padding: 3px; */
   border: 4px solid orange;
   border-radius: 50%;
 

@@ -11,7 +11,7 @@ import SEO from '../components/seo'
 // const puppeteer = require('puppeteer')
 
 const PageWrapper = styled.div`
-    background: #323944 !important;
+    background: var(--bg);
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     font-kerning: normal;
@@ -19,7 +19,7 @@ const PageWrapper = styled.div`
     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
     font-feature-settings: "kern", "liga", "clig", "calt";
-    color: #6a6a6a;
+    color: var(--text-color);
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 `

@@ -11,8 +11,8 @@ import SEO from '../components/seo'
 
 const Wrapper = styled.div`
   -webkit-transform: translate3d(0,0,0);
-  background: #323944;
-  color: #6a6a6a;
+  background: var(--bg);
+  color: var(--text-color);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
@@ -106,7 +106,7 @@ const Card = styled.div`
     text-align: left;
     padding: 0.8rem;
     font-size: 0.6rem;
-    color: #fff;
+    color: var(--p-text-color);
     font-weight: 400;
     letter-spacing: 2px;
   }

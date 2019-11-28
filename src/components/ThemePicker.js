@@ -60,10 +60,6 @@ const SBtn = styled.div`
   }
 `
 
-const ModalContainer = styled.div`
-
-`
-
 const Modal = styled.div`
   display: flex;
   background-color: orange;

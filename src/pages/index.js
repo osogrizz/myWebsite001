@@ -23,8 +23,8 @@ const Container = styled.div`
   margin-top: 1.45rem;
   max-width: 1200px;
   min-height: 90vh;
-  text-shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d;
-  color: #fff;
+  text-shadow: 2px 2px 8px var(--shadow), -2px -2px 8px var(--shadow);
+  color: var(--text-color);
   z-index: 10;
   h1 {
     padding-top: 100px;
@@ -40,14 +40,14 @@ const Container = styled.div`
     max-width: 800px;
     margin-top: 4rem;
     font-size: 1.4rem;
-    color: #fff;
+    color: var(--p-text-color);
     font-weight: 200;
     line-height: 2.7rem;
     letter-spacing: 3px;;
   }
   a {
     text-decoration: none;
-    color: #fff;
+    color: var(--p-text-color);
     &:hover {
       /* color: #6a6a6a; */
       text-shadow: 0px 0px 0px;
