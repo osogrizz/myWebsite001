@@ -75,6 +75,7 @@ const InputStyles = styled.input`
   border: none;
   border-radius: 3px;
   padding: 10px;
+  box-shadow: var(--input-shadow)
 `
 
 const Btn = styled.button`
@@ -120,6 +121,7 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 3px;
   padding: 10px;
+  box-shadow: var(--input-shadow)
 `
 
 
