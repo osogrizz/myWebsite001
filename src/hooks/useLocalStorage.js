@@ -1,11 +1,11 @@
 /* eslint-disable no-undef */
-import { useState,useEffect } from 'react'
+import { useState } from 'react'
 
 
 const useLocalStorage = (key, initialValue) => {
   
   const [storedValue, setStoredValue] = useState(() => {
-    if (typeof windo !== 'undefined') {
+    if (typeof window !== 'undefined') {
       const item = window.localStorage.getItem(key)
       return item ? JSON.parse(item) : initialValue
     }
