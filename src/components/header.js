@@ -111,7 +111,7 @@ const NavContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     li {
-      letter-spacing: 2px;
+      letter-spacing: 2.4px;
     }
   }
   a {
@@ -134,6 +134,7 @@ const NavContainer = styled.div`
 
 const activeLinkStyle = {
   borderBottom: '1px solid cornflowerblue',
+  letterSpacing: '2px',
   fontWeight: 500,
 }
 
