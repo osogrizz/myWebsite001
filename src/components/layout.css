@@ -12,17 +12,22 @@ body {
   --text-color: #6a6a6a;
   --p-text-color: #fff;
   --shadow: #4d4d4d; 
-  --link-color: #4d4d4d;
+  --shadow: 2px 2px 8px #4d4d4d, -2px -2px 8px #4d4d4d; 
+  /* --link-color: #4d4d4d; */
+  --link-color: #6a6a6a;
   --link-hover: #898989;
+  --modal-border: 2px solid #fff;
 }
 
 .light-theme {
   --bg: #fff;
   --text-color: #555;
   --p-text-color: #555;
-  --shadow: #898989;
-  --link-color: #639A67;
+  --shadow: 1px 1px 4px #898989;
+  /* --link-color: #639A67; */
+  --link-color: #205D67;
   --link-hover: #205D67;
+  --modal-border: 3px solid #205D67;
 }
 
 article,

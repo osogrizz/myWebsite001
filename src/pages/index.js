@@ -23,7 +23,8 @@ const Container = styled.div`
   margin-top: 1.45rem;
   max-width: 1200px;
   min-height: 90vh;
-  text-shadow: 2px 2px 8px var(--shadow), -2px -2px 8px var(--shadow);
+  /* text-shadow: 2px 2px 8px var(--shadow), -2px -2px 8px var(--shadow); */
+  text-shadow: var(--shadow);
   color: var(--text-color);
   z-index: 10;
   h1 {

@@ -63,7 +63,7 @@ const SBtn = styled.div`
 const Modal = styled.div`
   display: flex;
   background-color: orange;
-  border: 2px solid white;
+  border: var(--modal-border);
   border-radius: 4px;
   color: #444;
   line-height: 1.2;

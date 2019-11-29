@@ -18,8 +18,8 @@ const SectionContainer = styled.div`
           padding:  0 10px;
           
           svg {
-              height: 1.3em;
-              width: 1.3em;
+              height: 1.6rem;
+              width: 1.6rem;
               font-weight: lighter;
           }
 
@@ -40,7 +40,7 @@ const SectionContainer = styled.div`
               }
           }
           #linkedin {
-              fill: #6a6a6a;
+              fill: var(--link-color);
               &:hover {
                   stroke-width: 0;
                   color: orange;
@@ -48,7 +48,7 @@ const SectionContainer = styled.div`
               }
           }
           #github {
-              fill: #6a6a6a;
+              fill: var(--link-color);
               &:hover {
                   stroke-width: 0;
                   color: orange;
@@ -64,7 +64,7 @@ const SectionContainer = styled.div`
               }
           }
           #mail {
-              fill: #6a6a6a;
+              fill: var(--link-color);
               &:hover {
                   stroke-width: 0;
                   color: orange;
@@ -100,10 +100,7 @@ const TopWrapper = styled.div`
 `
 
 const SectionWrapper = styled.div`
-  /* position: static; */
   color: #6a6a6a;
-  /* backgroundColor: 'rgba(20, 20, 20, 1)', */
-  /* backgroundColor: 'inherit', */
   bottom: 0;
 `
 
@@ -115,22 +112,6 @@ const FooterBreak = styled.div`
     margin: 0 10px;
   }
 `
-
-// const TopFooter = () => (
-//   <TopWrapper>
-//     <div>
-//       Copyright © 
-//       {' '}
-//       {new Date().getFullYear()}
-//       , Leo Torres - All Rights Reserved
-//     </div>
-
-//     <div style={{ textAlign: 'right', }}>
-//       <p>A BobaBird Website</p>
-//     </div>
-//   </TopWrapper>
-// )
-
 
 const Footer = () => (
 
@@ -169,7 +150,7 @@ const Footer = () => (
           <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
         </li>
         <li>
-          <a href="https://www.freecodecamp.org/osogrizz" target="_blank" rel="noopener noreferrer"><FaFreeCodeCamp id="free-code-camp" /></a>
+          <a href="https://www.freecodecamp.org/osogrizz" target="_blank" rel="noopener noreferrer"><FaFreeCodeCamp id="free-code-camp" style={{ fontWeight: 900 }} /></a>
         </li>
       </ul>
     </SectionContainer>
