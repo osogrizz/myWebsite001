@@ -181,6 +181,22 @@ const Portfolio = ({ data }) => (
             <Card>
               <Img
                 // style={{ height: '100%' }}
+                fluid={data.cocktails.fluid}
+              />
+              <a href="https://icrco.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <h3>iCRco</h3>
+              </a>
+              <p>Tech Stack: Gatsby, React, GraphQL, WordPress API, PhP, Styled Components, CSS </p>
+              {/* <a href="https://icrco.netlify.app/" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a> */}
+            </Card>
+
+          </CardContainer>
+
+          <CardContainer>
+            
+            <Card>
+              <Img
+                  // style={{ height: '100%' }}
                 fluid={data.santaFe.fluid}
               />
               <a href="https://gatsby-starter-santa-fe.netlify.com/" target="_blank" rel="noopener noreferrer">
@@ -190,10 +206,6 @@ const Portfolio = ({ data }) => (
               <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
 
-          </CardContainer>
-
-          <CardContainer>
-            
             <Card>
               <Img
                 // style={{ height: '100%' }}
@@ -206,17 +218,6 @@ const Portfolio = ({ data }) => (
               <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
 
-            <Card>
-              <Img
-                // style={{ height: '100%' }}
-                fluid={data.cocktails.fluid}
-              />
-              <a href="https://mystifying-bartik-7d34ab.netlify.com/" target="_blank" rel="noopener noreferrer">
-                <h3>Whisper Sister&#39;s</h3>
-              </a>
-              <p>Tech Stack: Gatsby, Styled Components, Instagram API, Styled Components, CSS </p>
-              <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
-            </Card>
 
             <Card>
               <Img

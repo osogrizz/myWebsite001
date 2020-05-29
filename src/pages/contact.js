@@ -53,7 +53,7 @@ const FormWrapper = styled.div`
       color: #777;
       /* color: #fff; */
       &:hover {
-        color: rgb(243, 235, 222)
+        color: rgb(243, 235, 222);
       }
     }
   }
@@ -75,7 +75,7 @@ const InputStyles = styled.input`
   border: none;
   border-radius: 3px;
   padding: 10px;
-  box-shadow: var(--input-shadow)
+  box-shadow: var(--input-shadow);
 `
 
 const Btn = styled.button`
@@ -121,7 +121,7 @@ const TextArea = styled.textarea`
   border: none;
   border-radius: 3px;
   padding: 10px;
-  box-shadow: var(--input-shadow)
+  box-shadow: var(--input-shadow);
 `
 
 
