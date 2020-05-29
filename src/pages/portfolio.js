@@ -181,7 +181,7 @@ const Portfolio = ({ data }) => (
             <Card>
               <Img
                 // style={{ height: '100%' }}
-                fluid={data.cocktails.fluid}
+                fluid={data.icrco.fluid}
               />
               <a href="https://icrco.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <h3>iCRco</h3>
@@ -254,7 +254,7 @@ export const query = graphql`
       }
     }
     
-    cocktails: imageSharp(fluid: {originalName: {eq: "whisper-sisters.png" } } ) {
+    icrco: imageSharp(fluid: {originalName: {eq: "icrco.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
       }
