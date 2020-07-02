@@ -183,7 +183,7 @@ const Portfolio = ({ data }) => (
                 // style={{ height: '100%' }}
                 fluid={data.icrco.fluid}
               />
-              <a href="https://icrco.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <a href="https://icrco.com/" target="_blank" rel="noopener noreferrer">
                 <h3>iCRco</h3>
               </a>
               <p>Tech Stack: Gatsby, React, GraphQL, WordPress API, PhP, Styled Components, CSS </p>
