@@ -169,6 +169,18 @@ const Portfolio = ({ data }) => (
             <Card>
               <Img
                 // style={{ height: '100%' }}
+                fluid={data.icrco.fluid}
+              />
+              <a href="https://icrco.com/" target="_blank" rel="noopener noreferrer">
+                <h3>iCRco</h3>
+              </a>
+              <p>Tech Stack: Gatsby, React, GraphQL, WordPress API, PhP, Styled Components, CSS </p>
+              {/* <a href="https://icrco.netlify.app/" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a> */}
+            </Card>
+            
+            <Card>
+              <Img
+                // style={{ height: '100%' }}
                 fluid={data.conjugator.fluid}
               />
               <a href="https://conjugator-bw.netlify.com/" target="_blank" rel="noopener noreferrer">
@@ -178,17 +190,6 @@ const Portfolio = ({ data }) => (
               <a href="https://github.com/Conjugator-bw/conj-FE/tree/master/campeon-conjugator" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
 
-            <Card>
-              <Img
-                // style={{ height: '100%' }}
-                fluid={data.icrco.fluid}
-              />
-              <a href="https://icrco.com/" target="_blank" rel="noopener noreferrer">
-                <h3>iCRco</h3>
-              </a>
-              <p>Tech Stack: Gatsby, React, GraphQL, WordPress API, PhP, Styled Components, CSS </p>
-              {/* <a href="https://icrco.netlify.app/" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a> */}
-            </Card>
 
           </CardContainer>
 
