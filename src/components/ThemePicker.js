@@ -37,6 +37,7 @@ const Btn = styled.div`
     border: 2px solid orange;
     outline: none;
     background: #222;
+    filter: drop-shadow(2px 4px 6px black);
 
     &:hover {
         ul {
@@ -54,6 +55,7 @@ const SBtn = styled.div`
     border: 2px solid orange;
     outline: none;
     background: #222;
+    filter: drop-shadow(2px 4px 6px black);
 
     @media (max-width: 600px) {
       
@@ -138,9 +140,9 @@ const ThemePicker = () => {
 
 
 
-  return (    
+  return (
     <Wrapper>
-      <Btn onClick={toggleMode} className={darkMode ? 'toggle toggled' : 'toggle'}> 
+      <Btn onClick={toggleMode} className={darkMode ? 'toggle toggled' : 'toggle'}>
         <ul>
           <Modal>
             <li className={darkMode ? 'toggle toggled' : 'toggle'}>
@@ -148,7 +150,7 @@ const ThemePicker = () => {
                 onClick={handleDark}
                 style={{ background: '#222', border: '2px solid darkorange' }}
               />
-                Dark 
+                Dark
             </li>
         |
             <li className={!darkMode ? 'toggle toggled' : 'toggle'}>
@@ -160,7 +162,7 @@ const ThemePicker = () => {
       </Btn>
 
 
-    </Wrapper> 
+    </Wrapper>
   )
 }
 
