@@ -8,7 +8,8 @@ import ThemePicker from './ThemePicker'
 const HeaderWrapper = styled.div`
   position: relative;
   display: flex;
-  overflow: hidden;  
+  /* overflow: hidden;   */
+  overflow: visible;  
   background: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
     Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -85,6 +86,10 @@ const LogoContainer = styled.div`
   border: 4px solid orange;
   border-radius: 50%;
 
+  .gatsby-image-wrapper {
+    filter: drop-shadow(2px 4px 6px black );
+  }
+
   &:hover {
     transition: 0.1s cubic-bezier(0, 1.8, 1, 1.8);
     transform:  translateY(0.7em) scale(1.05);
@@ -144,7 +149,7 @@ const Header = () => (
     <HeaderContainer>
       <LogoContainer>
         <Link to="/">
-          <Image id="logo" style={{ maxHeight: '120px', maxWidth: '120px'}} />
+          <Image id="logo" style={{ maxHeight: '120px', maxWidth: '120px' }} />
         </Link>
       </LogoContainer>
 
