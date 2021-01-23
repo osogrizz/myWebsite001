@@ -120,6 +120,7 @@ const NavContainer = styled.div`
     }
   }
   a {
+    filter: drop-shadow(2px 4px 6px black);
     &:hover {
       transition: all 230ms ease;
       border-bottom: 3px solid cornflowerblue;
