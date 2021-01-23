@@ -118,6 +118,9 @@ const NavContainer = styled.div`
     li {
       letter-spacing: 2.4px;
     }
+    .link-list {
+      min-width: 120px;
+    }
   }
   a {
     filter: drop-shadow(2px 4px 6px black);
@@ -133,6 +136,9 @@ const NavContainer = styled.div`
         padding-top: 40px;
         margin-right: 10px;
         font-size: 18px;
+      }
+      .link-list {
+        min-width: auto;
       }
     }
   }
@@ -156,13 +162,13 @@ const Header = () => (
 
       <NavContainer>
         <ul>
-          <li>
+          <li className="link-list" >
             <Link to="/" activeStyle={activeLinkStyle}>Home</Link>
           </li>
-          <li>
+          <li className="link-list" >
             <Link to="/contact/" activeStyle={activeLinkStyle}>Contact</Link>
           </li>
-          <li>
+          <li className="link-list" >
             <Link to="/portfolio/" activeStyle={activeLinkStyle}>Portfolio</Link>
           </li>
           <li>
