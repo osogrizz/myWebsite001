@@ -92,8 +92,8 @@ const LogoContainer = styled.div`
 
   @media screen and (max-width: 500px) {
    .gatsby-image-wrapper  {
-      /* filter: none; */
-      /* box-shadow: 2px 6px 18px black; */
+      filter: none;
+      box-shadow: 2px 6px 18px black;
       border-radius: 50%;
      }
   }
