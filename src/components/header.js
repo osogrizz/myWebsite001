@@ -88,6 +88,14 @@ const LogoContainer = styled.div`
 
   .gatsby-image-wrapper {
     filter: drop-shadow(2px 4px 6px black );
+    --webkit-filter: drop-shadow(2px 4px 6px black);
+
+  }
+  @media screen and (max-width: 500px) {
+    /* height: 100%; */
+   .gatsby-image-wrapper  {
+     height: 100%;
+     }
   }
 
   &:hover {
