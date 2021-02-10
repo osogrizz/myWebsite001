@@ -10,7 +10,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo'
 
 const Wrapper = styled.div`
-  -webkit-transform: translate3d(0,0,0);
+  --webkit-transform: translate3d(0,0,0);
   background: var(--bg);
   color: var(--text-color);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -153,10 +153,21 @@ const Portfolio = ({ data }) => (
           <p>Please have a look at some examples of my work.</p>
 
           <CardContainer>
-            
+
 
             <Card>
-              <Img 
+              <Img
+                fluid={data.wellness.fluid}
+              />
+              <a href="https://www.somaticpsychologylifecoaching.com/" target="_blank" rel="noopener noreferrer">
+                <h3>Somatic Psycholgy Wellness</h3>
+              </a>
+              <p>Tech Stack: React, Gatsby, JavaScript, CSS, Styled Components, GraphQL, SVG</p>
+              <a href="https://github.com/somaticwellness-coach/life-wellness" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
+            </Card>
+
+            <Card>
+              <Img
                 fluid={data.taco.fluid}
               />
               <a href="https://gifted-goldberg-11d877.netlify.com/" target="_blank" rel="noopener noreferrer">
@@ -177,7 +188,7 @@ const Portfolio = ({ data }) => (
               <p>Tech Stack: Gatsby, React, GraphQL, WordPress API, PhP, Styled Components, CSS </p>
               {/* <a href="https://icrco.netlify.app/" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a> */}
             </Card>
-            
+
             <Card>
               <Img
                 // style={{ height: '100%' }}
@@ -194,10 +205,10 @@ const Portfolio = ({ data }) => (
           </CardContainer>
 
           <CardContainer>
-            
+
             <Card>
               <Img
-                  // style={{ height: '100%' }}
+                // style={{ height: '100%' }}
                 fluid={data.santaFe.fluid}
               />
               <a href="https://gatsby-starter-santa-fe.netlify.com/" target="_blank" rel="noopener noreferrer">
@@ -230,7 +241,7 @@ const Portfolio = ({ data }) => (
               </a>
               <p>Tech Stack: JavaScript, Styled Components, CSS, The Movie Database API </p>
               <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
-            </Card> 
+            </Card>
 
           </CardContainer>
         </Container>
@@ -255,6 +266,11 @@ export const query = graphql`
       }
     }
     
+    wellness: imageSharp(fluid: {originalName: {eq: "discover-wellness.png" } } ) {
+      fluid(maxWidth: 400) {
+      ...GatsbyImageSharpFluid
+      }
+    }
     icrco: imageSharp(fluid: {originalName: {eq: "icrco.png" } } ) {
       fluid(maxWidth: 400) {
       ...GatsbyImageSharpFluid
