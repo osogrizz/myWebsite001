@@ -189,6 +189,13 @@ const Portfolio = ({ data }) => (
               {/* <a href="https://icrco.netlify.app/" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a> */}
             </Card>
 
+
+
+
+          </CardContainer>
+
+          <CardContainer>
+
             <Card>
               <Img
                 // style={{ height: '100%' }}
@@ -200,11 +207,6 @@ const Portfolio = ({ data }) => (
               <p>Tech Stack: JavaScript, React, React Router, API </p>
               <a href="https://github.com/Conjugator-bw/conj-FE/tree/master/campeon-conjugator" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
-
-
-          </CardContainer>
-
-          <CardContainer>
 
             <Card>
               <Img
@@ -231,6 +233,10 @@ const Portfolio = ({ data }) => (
             </Card>
 
 
+
+          </CardContainer>
+
+          <CardContainer>
             <Card>
               <Img
                 // style={{ height: '100%' }}
@@ -242,8 +248,8 @@ const Portfolio = ({ data }) => (
               <p>Tech Stack: JavaScript, Styled Components, CSS, The Movie Database API </p>
               <a href="https://github.com/osogrizz" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
-
           </CardContainer>
+
         </Container>
 
         <LinkContainer>
@@ -261,44 +267,44 @@ export default Portfolio;
 export const query = graphql`
   query PortfolioQuery {
     card: imageSharp(fluid: {originalName: {eq: "homeBG.jpg" } } ) {
-      fluid(maxWidth: 400) {
+      fluid(maxWidth: 800) {
       ...GatsbyImageSharpFluid
       }
     }
     
     wellness: imageSharp(fluid: {originalName: {eq: "discover-wellness.png" } } ) {
-      fluid(maxWidth: 400) {
+      fluid(maxWidth: 800) {
       ...GatsbyImageSharpFluid
       }
     }
     icrco: imageSharp(fluid: {originalName: {eq: "icrco.png" } } ) {
-      fluid(maxWidth: 400) {
+      fluid(maxWidth: 800) {
       ...GatsbyImageSharpFluid
       }
     }
     
     markDown: imageSharp(fluid: {originalName: {eq: "markDown.png" } } ) {
-      fluid(maxWidth: 400) {
+      fluid(maxWidth: 800) {
       ...GatsbyImageSharpFluid
       }
     }
     santaFe: imageSharp(fluid: {originalName: {eq: "santaFe.png" } } ) {
-      fluid(maxWidth: 400) {
+      fluid(maxWidth: 800) {
       ...GatsbyImageSharpFluid
       }
     }
     taco: imageSharp(fluid: {originalName: {eq: "taco.png" } } ) {
-      fluid(maxWidth: 400) {
+      fluid(maxWidth: 800) {
       ...GatsbyImageSharpFluid
       }
     }
     tmdb: imageSharp(fluid: {originalName: {eq: "tmdb.png" } } ) {
-      fluid(maxWidth: 400) {
+      fluid(maxWidth: 800) {
       ...GatsbyImageSharpFluid
       }
     }
     conjugator: imageSharp(fluid: {originalName: {eq: "conjugator.png" } } ) {
-      fluid(maxWidth: 400) {
+      fluid(maxWidth: 800) {
       ...GatsbyImageSharpFluid
       }
     }
