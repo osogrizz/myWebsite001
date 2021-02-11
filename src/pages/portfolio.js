@@ -162,7 +162,7 @@ const Portfolio = ({ data }) => (
               <a href="https://www.somaticpsychologylifecoaching.com/" target="_blank" rel="noopener noreferrer">
                 <h3>Somatic Psycholgy Wellness</h3>
               </a>
-              <p>Tech Stack: React, Gatsby, JavaScript, CSS, Styled Components, GraphQL, SVG</p>
+              <p>Tech Stack: React, Gatsby, JavaScript, CSS, BootStrap, Styled Components, GraphQL, SVG</p>
               <a href="https://github.com/somaticwellness-coach/life-wellness" target="_blank" rel="noopener noreferrer"><FaGithub id="github" /></a>
             </Card>
 
